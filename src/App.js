@@ -5,6 +5,8 @@ function App() {
   return (
     <div className="App">
       Department of Radiology
+
+      <div> This is lab website!!!</div>
     </div>
   );
 }
