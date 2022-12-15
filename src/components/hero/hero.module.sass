@@ -1,0 +1,55 @@
+
+@mixin wrapper()
+    margin-left: 0px
+    margin-top: 0px
+    padding-left: 0px
+    padding-top: 0px
+    height: auto
+    color: #fff
+    overflow: hidden
+
+@mixin hero()
+    position: relative
+    background-position: 50% 50%!important
+    background-size: cover!important
+    background: url(../../assets/images/DSC_1483-X2.jpg) center center / cover no-repeat
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%)
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#bf000000',GradientType=0)
+        z-index: 0
+
+@mixin compartment()
+    max-width: 68.75rem
+    margin-right: auto
+    margin-left: auto
+    padding: 1.25rem
+    .heroContent
+        padding: 5.8rem 0
+        max-width: 50rem
+        z-index: 5
+        position: relative
+        & > h2
+            margin-bottom: 0
+            font-size: 4rem
+            font-weight: 700
+            line-height: 1.5
+        @media screen and (max-width: 600px)
+            padding: 5rem 0
+            &> h2 
+                font-size: 2.8rem
+                line-height: 1.5
+    
+
+.wrapper
+    @include wrapper()
+    .hero
+        @include hero()
+        & > .compartment
+            @include compartment()

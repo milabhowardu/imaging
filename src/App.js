@@ -18,8 +18,7 @@ function App() {
           <Route path="*" element={<NotFound />}/>
       </Routes>
     </Router>
-    Department of Radiology
-    footer
+    {/* footer */}
   </>
   );
 }
