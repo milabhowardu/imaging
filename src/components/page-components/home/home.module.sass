@@ -1,0 +1,31 @@
+
+@mixin wrapper()
+    max-width: 68.75rem
+    margin-right: auto
+    margin-left: auto
+    padding: 1.25rem
+    
+
+@mixin featuredInner()
+    border-bottom: 4px solid #003a63
+    padding-bottom: 12px
+    margin-bottom: 12px
+    & > h3
+        margin: 30px 0
+        font-family: "Open Sans",sans-serif
+        font-weight: bold
+        font-size: 2rem
+        line-height: 1.4
+    p
+        margin: 20px 0
+        color: #666
+    ul 
+        padding: 0 50px
+        list-style: disc
+        line-height: 1.5
+
+
+.wrapper
+    @include wrapper()
+    .featuredInner
+        @include featuredInner()
