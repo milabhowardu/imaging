@@ -5,36 +5,62 @@
     display: -webkit-flex
     display: -ms-flexbox
     display: flex
-    font-size: 0.875em
+    font-size: 1rem
     width: 100%
 
 @mixin navSecondary()
     display: inline-block
     color: #fff
-    padding: 0.875em
+    padding: 1rem
     margin-left: auto
 
 @mixin siteHeader()
     background-color: #003a63
-    color: #fff
+    color: #fffe
+    @media screen and (max-width: 600px)
+        padding-top: 1rem
 
 @mixin compartment()
     position: relative
     max-width: 1500px
     display: flex
-    align-content: center
-    padding: 1em 1.5em 0.5em 1.5em
+    align-items: center
+    padding: 1rem
     .siteLogo
         display: block
         overflow: hidden
-        height: 4.0625em
-        max-width: 10em
+        height: 4rem
+        max-width: 10rem
         width: 100%
         white-space: nowrap
         background: url(../../assets/images/HowardBoxLogo.png) 0 50% no-repeat
         background-size: contain
         color: transparent
-        margin-right: 1.25em
+        margin-right: 1.5rem
+    & > h3
+        border-left: 1px solid
+        padding: 1rem
+        padding-right: 0
+        color: #fff
+        display: inline-block
+        font-size: 1.5rem
+        font-weight: bold
+        vertical-align: top
+        min-width: 350px
+        font-family: "serif12", serif
+         line-height: 1.2
+        & > a 
+            color: #fff
+            text-decoration: none
+    @media screen and (max-width: 600px)
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        & > h3
+            border-left: 0
+            padding-top: 0
+            padding-left: 0
+            margin-top: 1rem
 
 .wrapper
     .siteTopHat

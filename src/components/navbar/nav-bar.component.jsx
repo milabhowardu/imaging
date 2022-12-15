@@ -12,12 +12,12 @@ const NavBar = () => {
           <a href="http://www2.howard.edu" class={classes.siteLogo}>
             Howard University
           </a>
-          {/* <h3>
+          <h3>
             <a href=".">
               Molecular Imaging <br />
               Laboratory
             </a>
-          </h3> */}
+          </h3>
         </div>
       </header>
     </div>
