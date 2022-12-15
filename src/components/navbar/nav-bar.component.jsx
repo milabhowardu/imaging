@@ -1,10 +1,13 @@
 import React from "react";
-import classes from './nav-bar.moudle.sass';
+import classes from './nav-bar.module.sass';
 
 const NavBar = () => {
   return (
     <>
-      <div>nav bar</div>
+      <div className={classes.site__top_hat}>
+        navbar
+        {/* <div className="nav-secondary"></div> */}
+      </div>
     </>
   );
 };
