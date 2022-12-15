@@ -1,4 +1,4 @@
-@mixin site__top_hat()
+@mixin siteTopHat()
     background: #2a6ebb
     border-bottom: 3px solid #e51937
     display: -webkit-box
@@ -14,7 +14,34 @@
     padding: 0.875em
     margin-left: auto
 
-.site__top_hat
-    @include site__top_hat()
-    .navSecondary
-        @include navSecondary()
+@mixin siteHeader()
+    background-color: #003a63
+    color: #fff
+
+@mixin compartment()
+    position: relative
+    max-width: 1500px
+    display: flex
+    align-content: center
+    padding: 1em 1.5em 0.5em 1.5em
+    .siteLogo
+        display: block
+        overflow: hidden
+        height: 4.0625em
+        max-width: 10em
+        width: 100%
+        white-space: nowrap
+        background: url(../../assets/images/HowardBoxLogo.png) 0 50% no-repeat
+        background-size: contain
+        color: transparent
+        margin-right: 1.25em
+
+.wrapper
+    .siteTopHat
+        @include siteTopHat()
+        .navSecondary
+            @include navSecondary()
+    .siteHeader
+        @include siteHeader()
+        .compartment
+            @include compartment()
