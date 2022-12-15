@@ -5,6 +5,7 @@ import Test from './components/test/test.component';
 import NotFound from './components/not-found/not-found.component';
 import NavBar from './components/navbar/nav-bar.component';
 import Hero from './components/hero/hero.component';
+import Footer from './components/footer/footer.component';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="*" element={<NotFound />}/>
       </Routes>
     </Router>
-    {/* footer */}
+    <Footer />
   </>
   );
 }

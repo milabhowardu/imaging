@@ -2,9 +2,9 @@ import React from "react";
 
 const Home = () => {
   return (
-    <>
-      <div>Department of Radiology</div>
-    </>
+
+      <div style={{height: 200}}>Department of Radiology</div>
+
   );
 };
 
