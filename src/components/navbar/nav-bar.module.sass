@@ -1,5 +1,20 @@
 @mixin site__top_hat()
-    background-color: red
+    background: #2a6ebb
+    border-bottom: 3px solid #e51937
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    font-size: 0.875em
+    width: 100%
+
+@mixin navSecondary()
+    display: inline-block
+    color: #fff
+    padding: 0.875em
+    margin-left: auto
 
 .site__top_hat
     @include site__top_hat()
+    .navSecondary
+        @include navSecondary()
