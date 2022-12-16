@@ -20,8 +20,16 @@
     display: flex
     justify-content: space-between
     align-items: center
-    @media screen and (max-width: 600px)
+    & > .faBars 
+        display: none
+    @media screen and (max-width: 1250px)
         padding-top: 1rem
+        & > .faBars 
+            display: block
+            margin-right: 50px
+            cursor: pointer
+            &:hover
+                color: #d4d4d4ee
 
 @mixin compartment()
     position: relative
@@ -55,10 +63,11 @@
         & > a
             color: #fff
             text-decoration: none
-    @media screen and (max-width: 600px)
+    @media screen and (max-width: 1250px)
         flex-direction: column
         justify-content: flex-start
         align-items: flex-start
+        padding-left: 30px
         & > h3
             border-left: 0
             padding-top: 0
@@ -75,7 +84,7 @@
         & > li 
             position: relative
             margin-right: 30px
-            &> a
+            & > a
                 color: #fff
                 font-weight: bold
                 padding: 15px 0px
@@ -97,7 +106,27 @@
                  &:after 
                     width: 100%
                     left: 0
-
+    @media screen and (max-width: 1250px)
+        display: none
+        flex-direction: column
+        position: absolute
+        border: 1px solid gray
+        width: 200px
+        right: 20px
+        top: 170px
+        z-index: 999
+        padding: 20px 10px
+        background-color: #ffff
+        border: 0
+        border-radius: 5px
+        box-shadow: 0 0 1px 2px #f3f3f3
+        & > ul
+            flex-direction: column
+            & > li 
+                position: relative
+                margin-right: 30px
+                & > a
+                    color: #003a63
 
 .wrapper
     .siteTopHat

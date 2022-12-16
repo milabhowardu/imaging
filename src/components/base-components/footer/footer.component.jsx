@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className={classes.wrapper}>
       <div className={classnames(classes.footer, classes.sole)}>
-        <a class={classes.siteLogo} href="http://www2.howard.edu/"></a>
+        <a className={classes.siteLogo} href="http://www2.howard.edu/"></a>
         <nav>
           <ul>
             <li>Copyright &copy; 2021 Howard University</li>
