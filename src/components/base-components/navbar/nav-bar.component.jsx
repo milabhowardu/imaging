@@ -7,8 +7,8 @@ const NavBar = () => {
       <div className={classes.siteTopHat}>
         <div className={classes.navSecondary}></div>
       </div>
-      <header class={classes.siteHeader}>
-        <div class={classes.compartment}>
+      <header className={classes.siteHeader}>
+        <div className={classes.compartment}>
           <a href="http://www2.howard.edu" class={classes.siteLogo}>
             Howard University
           </a>
@@ -19,6 +19,18 @@ const NavBar = () => {
             </a>
           </h3>
         </div>
+        <nav className={classes.nav} id="myLinks">
+          <ul>
+            <li>
+              <a href=".">About Us</a>
+            </li>
+            <li>
+               <a href="/research">
+                Research
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
     </div>
   );

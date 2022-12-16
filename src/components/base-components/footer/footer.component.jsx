@@ -18,28 +18,28 @@ const Footer = () => {
       <div className={classnames(classes.footer, classes.sole)}>
         <ul>
           <li>
-            <a href="index.html">About Us</a>
+            <a href=".">About Us</a>
           </li>
           <li>
-            <a href="research.html" title="">
+            <a href="/research" title="">
               Research
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="facilities.html">Facilities</a>
           </li>
           <li>
-            <a href="people.html">People</a>{" "}
+            <a href="people.html">People</a>
           </li>
           <li>
             <a href="events.html">Events</a>
           </li>
           <li>
-            <a href="contact.html">Contact Us</a>{" "}
+            <a href="contact.html">Contact Us</a>
           </li>
           <li>
             <a href="positions.html">Open Positions</a>
-          </li>
+          </li> */}
         </ul>
       </div>
 

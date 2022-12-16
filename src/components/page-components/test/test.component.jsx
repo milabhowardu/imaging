@@ -1,9 +1,10 @@
 import React from "react";
+import classes from "./test.module.sass";
 
 const Test = () => {
   return (
     <>
-      <div>Test</div>
+      <div className={classes.wrapper}>Test</div>
     </>
   );
 };

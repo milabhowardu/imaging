@@ -1,8 +1,12 @@
 import React from "react";
 import classes from "./home.module.sass";
+import Hero from "../../base-components/hero/hero.component";
+import background from '../../../assets/images/DSC_1483-X2.jpg';
 
 const Home = () => {
   return (
+    <>
+     <Hero background={background}/>
     <div className={classes.wrapper}>
       <div className={classes.featuredInner}>
         <h3>Mission</h3>
@@ -107,6 +111,7 @@ const Home = () => {
         </ul>
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,7 +1,8 @@
 import React from "react";
+import classes from "./not-found.module.sass";
 
 const NotFound = () => {
-  return <div style={{ height: 200 }}>not found</div>;
+  return <div  className={classes.wrapper}>not found</div>;
 };
 
 export default NotFound;

@@ -17,6 +17,9 @@
 @mixin siteHeader()
     background-color: #003a63
     color: #fffe
+    display: flex
+    justify-content: space-between
+    align-items: center
     @media screen and (max-width: 600px)
         padding-top: 1rem
 
@@ -48,8 +51,8 @@
         vertical-align: top
         min-width: 350px
         font-family: "serif12", serif
-         line-height: 1.2
-        & > a 
+        line-height: 1.2
+        & > a
             color: #fff
             text-decoration: none
     @media screen and (max-width: 600px)
@@ -62,6 +65,40 @@
             padding-left: 0
             margin-top: 1rem
 
+@mixin nav()
+    display: flex
+    width: 100%
+    justify-content: flex-end
+    align-items: center
+    & > ul
+        display: flex
+        & > li 
+            position: relative
+            margin-right: 30px
+            &> a
+                color: #fff
+                font-weight: bold
+                padding: 15px 0px
+                text-transform: uppercase
+                display: inline-block
+                position: relative
+            &:after 
+                background: none repeat scroll 0 0 transparent
+                bottom: 0
+                content: ""
+                display: block
+                height: 3px
+                left: 50%
+                position: absolute
+                background: rgb(244, 204, 4)
+                transition: width 0.3s ease 0s, left 0.3s ease 0s
+                width: 0
+            &:hover
+                 &:after 
+                    width: 100%
+                    left: 0
+
+
 .wrapper
     .siteTopHat
         @include siteTopHat()
@@ -71,3 +108,5 @@
         @include siteHeader()
         .compartment
             @include compartment()
+    .nav
+        @include nav()
