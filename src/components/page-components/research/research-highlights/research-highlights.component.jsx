@@ -41,7 +41,7 @@ const ReasrchHighlights = () => {
           <img src={research.researchImg} />
           <div>
             <div>
-              <h2>{research.title}test</h2>
+              <h2>{research.title}</h2>
               <div className={classes.author}>{research.author}</div>
               <div>{research.description}</div>
             </div>
