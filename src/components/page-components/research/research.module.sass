@@ -1,5 +1,34 @@
 @mixin wrapper()
-    min-height: 500px
+    max-width: 70rem
+    margin-right: auto
+    margin-left: auto
+    padding: 1.25rem
+    & > h2
+        font-size: 1.5rem
+        font-weight: 700
+        margin-top: 20px
+        color: #003a63
+
+@mixin header()
+    font-size: 1.5rem
+    line-height: 1.5
+    font-style: italic
+    color: #2A6EBB
+    margin-bottom: 30px
+
+@mixin researchContent()
+    padding: 4rem 0 2rem 4rem
+    & > h2
+        color: #003a63
+        font-size: 1.4rem
+        font-weight: 700
+        margin-bottom: 20px
+    @media screen and (max-width: 890px)
+        padding: 1rem
 
 .wrapper
     @include wrapper()
+    .researchContent
+        @include researchContent()
+        & > .header
+            @include header()

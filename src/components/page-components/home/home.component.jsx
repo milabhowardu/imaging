@@ -1,12 +1,12 @@
 import React from "react";
 import classes from "./home.module.sass";
 import Hero from "../../base-components/hero/hero.component";
-import background from '../../../assets/images/DSC_1483-X2.jpg';
+import background from '../../../assets/images/HomePage.jpg';
 
 const Home = () => {
   return (
     <>
-     <Hero background={background}/>
+    <Hero background={background} title="Howard University Imaging Core Facility"/>
     <div className={classes.wrapper}>
       <div className={classes.featuredInner}>
         <h3>Mission</h3>
@@ -14,7 +14,7 @@ const Home = () => {
           The Howard University Molecular Imaging Lab supports discovery,
           learning and interdisciplinary research using advanced imaging
           technology for the research community in Howard University and the
-          Washington DC area.{" "}
+          Washington DC area.
         </p>
       </div>
       <div className={classes.featuredInner}>
