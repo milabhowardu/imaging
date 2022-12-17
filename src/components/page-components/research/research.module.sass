@@ -9,12 +9,6 @@
         margin-top: 20px
         color: #003a63
 
-@mixin header()
-    font-size: 1.5rem
-    line-height: 1.5
-    font-style: italic
-    color: #2A6EBB
-    margin-bottom: 30px
 
 @mixin researchContent()
     padding: 4rem 0 2rem 4rem
@@ -26,9 +20,16 @@
     @media screen and (max-width: 890px)
         padding: 1rem
 
+@mixin header()
+    font-size: 1.5rem
+    line-height: 1.5
+    font-style: italic
+    color: #2A6EBB
+    margin-bottom: 30px
+
 .wrapper
     @include wrapper()
     .researchContent
         @include researchContent()
-        & > .header
+        .header
             @include header()
