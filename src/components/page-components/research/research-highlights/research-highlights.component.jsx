@@ -15,12 +15,6 @@ const ReasrchHighlights = () => {
       description: `This project aims to create a three-dimensional MRI brain atlas for large laboratory animals, including Yorkshire piglet and olive baboon for high throughput multimodal image analysis of PET and MRI.`,
     },
     {
-      researchImg: research_atlas,
-      title: `High-Throughput Image Analysis of MRI and PET Imaging`,
-      author: `Tsang-Wei Tu, Department of Radiology; Yeona Kang, Department of Mathematics; Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National`,
-      description: `This project aims to create a three-dimensional MRI brain atlas for large laboratory animals, including Yorkshire piglet and olive baboon for high throughput multimodal image analysis of PET and MRI.`,
-    },
-    {
       researchImg: research_tbi,
       title: `Imaging Tissue Damage and Metabolic Disorders in Diffuse Traumatic Brain Injury`,
       author: `Tsang-Wei Tu, Department of Radiology; Joseph Frank, Radiology and Imaging Sciences, Clinical Center, National Institutes of Health`,
