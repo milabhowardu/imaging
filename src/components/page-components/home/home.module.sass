@@ -7,7 +7,7 @@
     
 
 @mixin featuredInner()
-    border-bottom: 4px solid #003a63
+    // border-bottom: 4px solid #003a63
     padding-bottom: 12px
     margin-bottom: 12px
     & > h3
@@ -16,6 +16,7 @@
         font-weight: bold
         font-size: 2rem
         line-height: 1.4
+        color: #003a63
     p
         margin: 20px 0
         color: #666
@@ -24,8 +25,16 @@
         list-style: disc
         line-height: 1.5
 
+@mixin headerTitle()
+    color: #002A47
+    font-size: 2rem
+    font-weight: 700
+    
 
 .wrapper
     @include wrapper()
     .featuredInner
         @include featuredInner()
+    .compartment
+        .headerTitle
+            @headerTitle()
