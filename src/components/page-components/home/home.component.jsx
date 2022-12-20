@@ -8,6 +8,7 @@ const Home = () => {
     <>
     <Hero background={background} title="Howard University Imaging Core Facility"/>
     <div className={classes.wrapper}>
+      <div className={classes.navPath}>HOME  »  <strong>RESEARCH</strong></div>
       <div className={classes.featuredInner}>
         <h3>Mission</h3>
         <p>

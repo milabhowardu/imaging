@@ -11,14 +11,17 @@
 
 
 @mixin researchContent()
-    padding: 4rem 0 2rem 4rem
+    padding: 4rem 0 2rem 0rem
     & > h2
         color: #003a63
         font-size: 1.4rem
         font-weight: 700
         margin-bottom: 20px
     @media screen and (max-width: 890px)
-        padding: 1rem
+        padding: 1rem 0rem 1rem 0rem
+
+@mixin navPath()
+    color: #635c81
 
 @mixin header()
     font-size: 1.5rem
@@ -28,6 +31,8 @@
 
 .wrapper
     @include wrapper()
+    .navPath
+        @include navPath()
     .researchContent
         @include researchContent()
         .header

@@ -12,7 +12,7 @@ const Research = () => {
     <>
       <Hero background={background} title="Research Activities" />
       <div className={classes.wrapper}>
-        <div>HOMERE | SEARCH</div>
+        <div className={classes.navPath}>HOME  »  <strong>RESEARCH</strong></div>
         <div className={classes.researchContent}>
           <div className={classes.header}>
             The <strong>M</strong>olecular <strong>I</strong>maging{" "}
