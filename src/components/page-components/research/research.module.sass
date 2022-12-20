@@ -9,7 +9,6 @@
         margin-top: 20px
         color: #003a63
 
-
 @mixin researchContent()
     padding: 2rem 0 2rem 0rem
     @media screen and (max-width: 890px)
@@ -28,10 +27,11 @@
             background: rgba(0, 0, 0, 0.2)
             height: 100%
             font-size: 1.2rem
-            display: flex
-            justify-content: center
-            align-items: flex-end
-            & > .narrow
+            .flex
+                display: flex
+                justify-content: center
+                align-items: flex-end
+            .narrow
                 margin-left: 10px
                 border-radius: 50%
                 width: 25px
@@ -41,9 +41,14 @@
                 display: flex
                 justify-content: center
                 align-items: center
+                &:hover
+                    background-color: rgb(244, 204, 4)
+                    width: 30px
+                    height: 30px
         @media screen and (max-width: 690px)
             flex-direction: column
-
+            & > .more
+                justify-content: flex-start
 
 @mixin navPath()
     color: #635c81

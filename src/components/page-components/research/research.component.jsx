@@ -47,10 +47,14 @@ const Research = () => {
               <IoMdPaper size={30} /> Selected Publications
             </div>
             <div className={classes.more}>
-              View Full Publications
-              <div className={classes.narrow}>
-                <HiArrowRight size={18}/>
-              </div>
+              <a href="/research/full">
+                <div className={classes.flex}>
+                  View Full Publications
+                  <div className={classes.narrow}>
+                    <HiArrowRight size={18} />
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
           <div className={classes.textBlock}>
