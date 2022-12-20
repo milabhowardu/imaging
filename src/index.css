@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
   color: #666;
-  background-color: fafafa;
+  /* background-color: #F2F2F2; */
 }
 
 code {
