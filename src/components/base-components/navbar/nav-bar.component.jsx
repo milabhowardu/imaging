@@ -57,6 +57,11 @@ const NavBar = () => {
                 Research
               </a>
             </li>
+            <li>
+               <a href="/people">
+                People
+              </a>
+            </li>
           </ul>
         </nav>
       </header>

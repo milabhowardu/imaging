@@ -841,12 +841,6 @@ const FullPublications = () => {
       author: "Yin JJ, Lao F, Fu PP, Wamer WG, Zhao YL, Wang PC, Han D , Qin Y, Sun BY, Xing GM, Dong JQ, Liang XJ, Chen CY.",
       title: "The Scavenging of Reactive Oxygen Species and the Potential for Cell Protection by Functionalized Fullerene Materials.",
       info: "Biomaterials. 30(4):611-621, 2009",
-      publish: [
-        {
-          publish: "",
-          publishLink: "",
-        },
-      ],
     },
     {
       author: "Liang XJ, Chen CY, Zhao YL, Jia L, Wang PC.",
