@@ -38,10 +38,10 @@ const ReasrchHighlights = () => {
     <>
       {reaserchHighlightsList.map((research) => (
         <div className={classes.researchHightlights}>
-          <img src={research.researchImg} />
+          <img src={research.researchImg} alt={research.title}/>
           <div>
             <div>
-              <h2>{research.title}</h2>
+              <h2 className={classes.title}>{research.title}</h2>
               <div className={classes.author}>{research.author}</div>
               <div>{research.description}</div>
             </div>
