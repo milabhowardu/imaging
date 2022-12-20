@@ -5,33 +5,54 @@ import ReasrchHighlights from "./research-highlights/research-highlights.compone
 
 import background from "../../../assets/images/ResearchPage.jpg";
 import SupportedResearchProjects from "./supported-research-projects/supported-research-projects.component";
-import SelectedPublications from './selected-publications/selected-publications.component';
+import SelectedPublications from "./selected-publications/selected-publications.component";
 
-import { IoMdPaper, IoMdPeople   } from "react-icons/io";
+import { IoMdPaper, IoMdPeople } from "react-icons/io";
 import { GoMegaphone } from "react-icons/go";
+import { HiArrowRight } from "react-icons/hi";
 
 const Research = () => {
   return (
     <>
       <Hero background={background} title="Research Activities" />
       <div className={classes.wrapper}>
-      <div className={classes.navPath}>HOME  »  <strong>RESEARCH</strong></div>
+        <div className={classes.navPath}>
+          HOME » <strong>RESEARCH</strong>
+        </div>
         <div className={classes.researchContent}>
           <div className={classes.header}>
-            The <strong>M</strong>olecular <strong>I</strong>maging{" "}
+            The <strong>M</strong>olecular <strong>I</strong>maging
             <strong>L</strong>aboratory provides state-of-the-art
             instrumentation and intellectual resources to support preclinical
             imaging research.
           </div>
-          <h2><GoMegaphone size={28}/> Research Highlights</h2>
+          <div className={classes.blockHeader}>
+            <div>
+              <GoMegaphone size={28} /> Research Highlights
+            </div>
+          </div>
           <div className={classes.textBlock}>
             <ReasrchHighlights />
           </div>
-          <h2><IoMdPeople size={30}/> Supported Research Projects</h2>
+          <div className={classes.blockHeader}>
+            <div>
+              <IoMdPeople size={30} /> Supported Research Projects
+            </div>
+          </div>
           <div className={classes.textBlock}>
             <SupportedResearchProjects />
           </div>
-          <h2><IoMdPaper size={30}/> Selected Publications</h2>
+          <div className={classes.blockHeader}>
+            <div>
+              <IoMdPaper size={30} /> Selected Publications
+            </div>
+            <div className={classes.more}>
+              View Full Publications
+              <div className={classes.narrow}>
+                <HiArrowRight size={18}/>
+              </div>
+            </div>
+          </div>
           <div className={classes.textBlock}>
             <SelectedPublications />
           </div>
