@@ -30,7 +30,7 @@ const NavBar = () => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.siteTopHat}>
-        <div className={classes.navSecondary}></div>
+        <div ></div>
       </div>
       <header className={classes.siteHeader}>
         <div className={classes.compartment}>
