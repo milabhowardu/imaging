@@ -14,7 +14,7 @@ import { HiArrowRight } from "react-icons/hi";
 const Research = () => {
   return (
     <>
-      <Hero background={background} title="Research Activities" />
+      <Hero background={background} title="" />
       <div className={classes.wrapper}>
         <div className={classes.navPath}>
           HOME » <strong>RESEARCH</strong>

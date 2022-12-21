@@ -27,6 +27,11 @@
             background: rgba(0, 0, 0, 0.2)
             height: 100%
             font-size: 1.2rem
+            &:hover
+                & > a 
+                    text-decoration: underline
+                .narrow
+                    background-color: rgb(244, 204, 4)
             .flex
                 display: flex
                 justify-content: center
@@ -41,10 +46,6 @@
                 display: flex
                 justify-content: center
                 align-items: center
-                &:hover
-                    background-color: rgb(244, 204, 4)
-                    width: 30px
-                    height: 30px
         @media screen and (max-width: 690px)
             flex-direction: column
             & > .more
