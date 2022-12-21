@@ -2,12 +2,15 @@ import React from "react";
 import classes from "./people.module.sass";
 import Hero from "../../base-components/hero/hero.component";
 
-import { IoMdPaper } from "react-icons/io";
+import { IoPersonCircleSharp } from "react-icons/io5";
 import { HiArrowRight } from "react-icons/hi";
 
 import background from "../../../assets/images/Header_people.jpg";
 import pwang from "../../../assets/images/PWang.jpg";
 import wtu from "../../../assets/images/WTu.jpg";
+import linCrop from "../../../assets/images/Lin_Crop.jpg";
+import chhsu from "../../../assets/images/CHHsu.jpg";
+import artur from "../../../assets/images/Artur.jpg";
 
 const People = () => {
   const peopleLIst = [
@@ -27,6 +30,30 @@ const People = () => {
       email: "tsangwei.tu@howard.edu",
       moreInfo: "",
     },
+    {
+      image: linCrop ,
+      name: "Stephen Lin, MEng",
+      title: "Lab Manager",
+      phone: "(202) 865-3729",
+      email: "stephen.lin@howard.edu",
+      moreInfo: "",
+    },
+    {
+      image: chhsu ,
+      name: "Chao-Hsiung Hsu, PhD",
+      title: "Postdoctoral Fellow",
+      phone: "(202) 865-7938",
+      email: "chaohsiung.hsu@howard.edu",
+      moreInfo: "",
+    },
+    {
+      image: artur ,
+      name: "Artur Agaronyan, BS",
+      title: "Research Assistant",
+      phone: "(202) 865-3741",
+      email: "stephen.lin@howard.edu",
+      moreInfo: "aagarony@terpmail.umd.edu",
+    },
   ];
   return (
     <>
@@ -37,7 +64,7 @@ const People = () => {
         </div>
         <div className={classes.blockHeader}>
           <div>
-            <IoMdPaper size={28} /> Our Lab
+            <IoPersonCircleSharp size={30} /> Our Member
           </div>
         </div>
         <div className={classes.peopleBlock}>
