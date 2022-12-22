@@ -53,7 +53,7 @@ function App() {
         </Routes>
       </Router>
     <Footer />
-    <button onClick={goBacktoTo} id="myBtn" className="goBacktoTo"><AiOutlineArrowUp size={25}/> </button>
+    <button onClick={goBacktoTo} id="myBtn" className="goBacktoTo"> Top </button>
   </>
   );
 }
