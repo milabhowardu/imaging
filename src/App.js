@@ -14,30 +14,30 @@ import Footer from './components/base-components/footer/footer.component';
 import { AiOutlineArrowUp } from "react-icons/ai";
 
 function App() {
-  useEffect(() => {
-    const handleScroll = (event) => {
-      let sticky = 1500;
-      let mybutton = document.getElementById("myBtn");
+  // useEffect(() => {
+  //   const handleScroll = (event) => {
+  //     let sticky = 1500;
+  //     let mybutton = document.getElementById("myBtn");
 
-      if (window.pageYOffset >= sticky) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    };
+  //     if (window.pageYOffset >= sticky) {
+  //       mybutton.style.display = "block";
+  //     } else {
+  //       mybutton.style.display = "none";
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
-  const goBacktoTo = () =>{
-    console.log("goBacktoTop");
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+  // const goBacktoTo = () =>{
+  //   console.log("goBacktoTop");
+  //   document.body.scrollTop = 0;
+  //   document.documentElement.scrollTop = 0;
+  // }
 
   return (
     <> 
@@ -53,7 +53,7 @@ function App() {
         </Routes>
       </Router>
     <Footer />
-    <button onClick={goBacktoTo} id="myBtn" className="goBacktoTo"> Top </button>
+    {/* <button onClick={goBacktoTo} id="myBtn" className="goBacktoTo"> Top </button> */}
   </>
   );
 }
