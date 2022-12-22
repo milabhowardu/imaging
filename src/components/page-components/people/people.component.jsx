@@ -10,6 +10,7 @@ import pwang from "../../../assets/images/PWang.jpg";
 import wtu from "../../../assets/images/WTu.jpg";
 import linCrop from "../../../assets/images/Lin_Crop.jpg";
 import chhsu from "../../../assets/images/CHHsu.jpg";
+import stuart from "../../../assets/images/SWashington.jpg";
 import artur from "../../../assets/images/Artur.jpg";
 
 const People = () => {
@@ -44,6 +45,14 @@ const People = () => {
       title: "Postdoctoral Fellow",
       phone: "(202) 865-7938",
       email: "chaohsiung.hsu@howard.edu",
+      moreInfo: "",
+    },
+    {
+      image: stuart ,
+      name: "Stuart Washington, PhD",
+      title: "Postdoctoral Fellow",
+      phone: "(202) 865-4980",
+      email: "sdw4@georgetown.edu",
       moreInfo: "",
     },
     {
