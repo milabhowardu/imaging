@@ -53,15 +53,15 @@ const People = () => {
       title: "Postdoctoral Fellow",
       phone: "(202) 865-4980",
       email: "sdw4@georgetown.edu",
-      moreInfo: "",
+      moreInfo: "/imaging-people-swashington",
     },
     {
       image: artur ,
       name: "Artur Agaronyan, BS",
       title: "Research Assistant",
       phone: "(202) 865-3741",
-      email: "stephen.lin@howard.edu",
-      moreInfo: "aagarony@terpmail.umd.edu",
+      email: "aagarony@terpmail.umd.edu",
+      moreInfo: "/imaging-people-aagaronyan",
     },
   ];
   return (

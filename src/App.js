@@ -14,6 +14,8 @@ import NavBar from './components/base-components/navbar/nav-bar.component';
 import Footer from './components/base-components/footer/footer.component';
 import Slin from './components/page-components/people/person/slin.component';
 import Hhsu from './components/page-components/people/person/hhsu.component';
+import Swashington from './components/page-components/people/person/swashington.component';
+import Aagaronyan from './components/page-components/people/person/aagaronyan.component';
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
             <Route exact path="/imaging-people-wtu" element={<Wtu />}/>
             <Route exact path="/imaging-people-slin" element={<Slin />}/>
             <Route exact path="/imaging-people-chhsu" element={<Hhsu />}/>
+            <Route exact path="/imaging-people-aagaronyan" element={<Swashington />}/>
+            <Route exact path="/imaging-people-swashington" element={<Aagaronyan />}/>
             <Route exact path="/test" element={<Test />}/>
             <Route path="*" element={<NotFound />}/>
         </Routes>
