@@ -16,7 +16,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 function App() {
   useEffect(() => {
     const handleScroll = (event) => {
-      let sticky = 500;
+      let sticky = 1500;
       let mybutton = document.getElementById("myBtn");
 
       if (window.pageYOffset >= sticky) {
