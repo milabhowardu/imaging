@@ -68,8 +68,8 @@ const People = () => {
           </div>
         </div>
         <div className={classes.peopleBlock}>
-          {peopleLIst.map((people) => (
-            <div className={classes.card}>
+          {peopleLIst.map((people, idx) => (
+            <div className={classes.card} key={`people${idx}`}>
               <div className={classes.people}>
                 <img src={people.image} />
                 <div className={classes.name}>{people.name}</div>
