@@ -32,8 +32,8 @@ function App() {
             <Route exact path="/imaging-people-wtu" element={<Wtu />}/>
             <Route exact path="/imaging-people-slin" element={<Slin />}/>
             <Route exact path="/imaging-people-chhsu" element={<Hhsu />}/>
-            <Route exact path="/imaging-people-aagaronyan" element={<Swashington />}/>
-            <Route exact path="/imaging-people-swashington" element={<Aagaronyan />}/>
+            <Route exact path="/imaging-people-swashington" element={<Swashington />}/>
+            <Route exact path="/imaging-people-aagaronyan" element={<Aagaronyan />}/>
             <Route exact path="/test" element={<Test />}/>
             <Route path="*" element={<NotFound />}/>
         </Routes>
