@@ -32,7 +32,6 @@
         border-radius: 5px
     & > div
         & > .name
-            // text-align: center
             color: #002A47
             font-size: 1.8rem
             font-weight: 700
@@ -40,15 +39,24 @@
         & > .title
             color: #003A63
             font-size: 1.2rem
-            font-weight: 500
-            // text-align: center
+
+@mixin biography()
+    line-height: 1.7
+
+@mixin expertise()
+    & > ul > li
+        margin-bottom: 10px
+
+@mixin contactIfon()
+     line-height: 1.7   
+        
 
 @mixin header()
     color: #002A47
     font-size: 1.5rem
     font-weight: 900
     margin-top: 50px
-    margin-bottom: 20px
+    margin-bottom: 15px
 
 
 .wrapper
@@ -61,5 +69,11 @@
         @include person()
         & > .personInfo
             @include personInfo()
+        & > .biography
+            @include biography()
+        & > .expertise
+            @include expertise()
+        & > .contactIfon
+            @include contactIfon()
         .header
             @include header()

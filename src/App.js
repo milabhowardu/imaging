@@ -6,6 +6,7 @@ import Research from './components/page-components/research/research.component';
 import FullPublications from './components/page-components/research/full-publications/full-publications.component';
 import People from './components/page-components/people/people.component';
 import Pwang from './components/page-components/people/person/pwang.component';
+import Wtu from './components/page-components/people/person/wtu.component';
 import Test from './components/page-components/test/test.component';
 import NotFound from './components/page-components/not-found/not-found.component';
 
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/research/full" element={<FullPublications />}/>
             <Route exact path="/people" element={<People />}/>
             <Route exact path="/imaging-people-pwang" element={<Pwang />}/>
+            <Route exact path="/imaging-people-wtu" element={<Wtu />}/>
             <Route exact path="/test" element={<Test />}/>
             <Route path="*" element={<NotFound />}/>
         </Routes>

@@ -29,7 +29,7 @@ const People = () => {
       title: "Assistant Professor",
       phone: "(202) 865-3742",
       email: "tsangwei.tu@howard.edu",
-      moreInfo: "",
+      moreInfo: "/imaging-people-wtu",
     },
     {
       image: linCrop ,

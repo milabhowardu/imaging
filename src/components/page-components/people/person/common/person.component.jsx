@@ -4,6 +4,16 @@ import classes from "./person.module.sass";
 import { IoPersonCircleSharp } from "react-icons/io5";
 
 const Person = ({ person }) => {
+  const {
+    name,
+    title,
+    email,
+    phone,
+    biography,
+    areasofExpertise,
+    publicationsList,
+  } = person;
+
   return (
     <div className={classes.wrapper}>
       <div className={classes.navPath}>
@@ -18,27 +28,35 @@ const Person = ({ person }) => {
         <div className={classes.personInfo}>
           <img src={person.image} />
           <div>
-            <div className={classes.name}>{person.name}</div>
+            <div className={classes.name}>{name}</div>
 
-            <div className={classes.title}>{person.title} </div>
+            <div className={classes.title}>{title} </div>
           </div>
         </div>
-        <div>
+        <div  className={classes.biography}>
           <div className={classes.header}>Biography</div>
-          <div dangerouslySetInnerHTML={{__html: person.biography}}></div>
+          <div dangerouslySetInnerHTML={{ __html: biography }}></div>
         </div>
-        <div>
-          <div  className={classes.header}>Areas of Expertise</div>
-          <div>{person.areasofExpertise}</div>
+        <div  className={classes.expertise}>
+          <div className={classes.header}>Areas of Expertise</div>
+          <ul>
+            {areasofExpertise.map((expertise) => (
+              <li>{expertise}</li>
+            ))}
+          </ul>
         </div>
-        <div>
-          <div  className={classes.header}>Publications List</div>
-          <div>{person.publicationsList}</div>
+        <div className={classes.publications}>
+          <div className={classes.header}>Publications List</div>
+          <div>
+            <a href={publicationsList} target="_blank">
+              {person.publicationsList}
+            </a>
+          </div>
         </div>
-        <div>
-          <div  className={classes.header}>Contact Info</div>
-          <div>{person.phone}</div>
-          <div>{person.email}</div>
+        <div  className={classes.contactIfon}>
+          <div className={classes.header}>Contact Info</div>
+          <div>Email: {email}</div>
+          <div>Tel: {phone}</div>
         </div>
       </div>
     </div>

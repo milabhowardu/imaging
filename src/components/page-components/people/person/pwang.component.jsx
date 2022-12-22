@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../../../base-components/hero/hero.component";
 import Person from "./common/person.component";
 
-import background from "../../../../assets/images/Header_people.jpg";
+
 import pwang from "../../../../assets/images/PWang.jpg";
 
 const Pwang = () => {
