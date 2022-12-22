@@ -45,7 +45,7 @@ const People = () => {
       title: "Postdoctoral Fellow",
       phone: "(202) 865-7938",
       email: "chaohsiung.hsu@howard.edu",
-      moreInfo: "",
+      moreInfo: "/imaging-people-chhsu",
     },
     {
       image: stuart ,

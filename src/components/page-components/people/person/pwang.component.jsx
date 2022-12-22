@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "../../../base-components/hero/hero.component";
 import Person from "./common/person.component";
 
 
@@ -25,7 +24,7 @@ const Pwang = () => {
       "MRI, PET/SPECT/CT, Optical Imaging of Small Animals with Various Disease Models",
       "University Imaging Core Facility Management",
     ],
-    publicationsList:
+    publicationsListLink:
       "https://www.ncbi.nlm.nih.gov/myncbi/1JUZfscHm_ikv/bibliography/public/",
   };
   return (

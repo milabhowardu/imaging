@@ -21,7 +21,7 @@ const Wtu = () => {
       "Traumatic Brain Injury",
       "Neuropathology",
     ],
-    publicationsList:
+    publicationsListLink:
       "https://www.ncbi.nlm.nih.gov/myncbi/tsang-wei.tu.2/bibliography/public/",
   };
   return (

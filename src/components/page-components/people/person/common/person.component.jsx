@@ -11,6 +11,7 @@ const Person = ({ person }) => {
     phone,
     biography,
     areasofExpertise,
+    publicationsListLink,
     publicationsList,
   } = person;
 
@@ -33,11 +34,11 @@ const Person = ({ person }) => {
             <div className={classes.title}>{title} </div>
           </div>
         </div>
-        <div  className={classes.biography}>
+        <div className={classes.biography}>
           <div className={classes.header}>Biography</div>
           <div dangerouslySetInnerHTML={{ __html: biography }}></div>
         </div>
-        <div  className={classes.expertise}>
+        <div className={classes.expertise}>
           <div className={classes.header}>Areas of Expertise</div>
           <ul>
             {areasofExpertise.map((expertise) => (
@@ -47,13 +48,18 @@ const Person = ({ person }) => {
         </div>
         <div className={classes.publications}>
           <div className={classes.header}>Publications List</div>
-          <div>
-            <a href={publicationsList} target="_blank">
-              {person.publicationsList}
-            </a>
-          </div>
+            {publicationsListLink && (
+              <div>
+                <a href={publicationsListLink} target="_blank">
+                  {person.publicationsListLink}
+                </a>
+              </div>
+            )}
+            {publicationsList && (
+              <div dangerouslySetInnerHTML={{ __html: publicationsList }}></div>
+            )}
         </div>
-        <div  className={classes.contactIfon}>
+        <div className={classes.contactIfon}>
           <div className={classes.header}>Contact Info</div>
           <div>Email: {email}</div>
           <div>Tel: {phone}</div>
