@@ -37,7 +37,7 @@ const People = () => {
       title: "Lab Manager",
       phone: "(202) 865-3729",
       email: "stephen.lin@howard.edu",
-      moreInfo: "",
+      moreInfo: "/imaging-people-slin",
     },
     {
       image: chhsu ,

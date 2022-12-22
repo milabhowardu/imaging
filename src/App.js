@@ -12,6 +12,7 @@ import NotFound from './components/page-components/not-found/not-found.component
 
 import NavBar from './components/base-components/navbar/nav-bar.component';
 import Footer from './components/base-components/footer/footer.component';
+import Slin from './components/page-components/people/person/slin.component';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route exact path="/people" element={<People />}/>
             <Route exact path="/imaging-people-pwang" element={<Pwang />}/>
             <Route exact path="/imaging-people-wtu" element={<Wtu />}/>
+            <Route exact path="/imaging-people-slin" element={<Slin />}/>
             <Route exact path="/test" element={<Test />}/>
             <Route path="*" element={<NotFound />}/>
         </Routes>

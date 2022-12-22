@@ -30,7 +30,6 @@ const Pwang = () => {
   };
   return (
     <>
-      {/* <Hero background={background} title="" /> */}
       <Person person={person}/>
     </>
   );

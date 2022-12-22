@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../../../base-components/hero/hero.component";
+
 import Person from "./common/person.component";
 
 import wtu from "../../../../assets/images/WTu.jpg";
@@ -26,7 +26,6 @@ const Wtu = () => {
   };
   return (
     <>
-      {/* <Hero background={background} title="" /> */}
       <Person person={person}/>
     </>
   );

@@ -55,7 +55,10 @@
     line-height: 1.7
 
 @mixin expertise()
-    & > ul > li
+    & > ul 
+        padding-left: 20px
+        list-style-type: disc
+        & > li
         margin-bottom: 10px
 
 @mixin contactIfon()
