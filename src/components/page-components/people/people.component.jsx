@@ -21,7 +21,7 @@ const People = () => {
       title: "Professor, Director",
       phone: "(202) 865-3711",
       email: "pwang@howard.edu",
-      moreInfo: "",
+      moreInfo: "/imaging-people-pwang",
     },
     {
       image: wtu ,
@@ -77,20 +77,20 @@ const People = () => {
           </div>
         </div>
         <div className={classes.peopleBlock}>
-          {peopleLIst.map((people, idx) => (
-            <div className={classes.card} key={`people${idx}`}>
+          {peopleLIst.map((person, idx) => (
+            <div className={classes.card} key={`person${idx}`}>
               <div className={classes.people}>
-                <img src={people.image} />
-                <div className={classes.name}>{people.name}</div>
+                <img src={person.image} />
+                <div className={classes.name}>{person.name}</div>
                 <div className={classes.title}>
-                  <p>{people.title} </p>
-                  <p>{people.phone}</p>
-                  <p>{people.email}</p>
+                  <p>{person.title} </p>
+                  <p>{person.phone}</p>
+                  <p>{person.email}</p>
                 </div>
               </div>
               <div className={classes.viewMore}>
                 
-                <div>View More</div>
+                <div><a href={person.moreInfo}>View More</a></div>
                 <div className={classes.narrow}>
                       <HiArrowRight size={15}/>
                     </div>
