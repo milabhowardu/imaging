@@ -8,7 +8,7 @@ const Aagaronyan = () => {
   const person = {
     image: artur ,
     name: "Artur Agaronyan, BS",
-    title: "Research Assistant",
+    title: "PhD Student",
     phone: "(202) 865-3741",
     email: "aagarony@terpmail.umd.edu",
     biography: `
