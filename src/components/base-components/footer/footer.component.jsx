@@ -32,10 +32,10 @@ const Footer = () => {
           <li>
             <a href="/people">People</a>
           </li>
-          {/*<li>
-            <a href="events.html">Events</a>
-          </li>
           <li>
+            <a href="/events">Events</a>
+          </li>
+          {/*<li>
             <a href="contact.html">Contact Us</a>
           </li>
           <li>

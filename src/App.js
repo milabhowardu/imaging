@@ -16,7 +16,8 @@ import Slin from './components/page-components/people/person/slin.component';
 import Hhsu from './components/page-components/people/person/hhsu.component';
 import Swashington from './components/page-components/people/person/swashington.component';
 import Aagaronyan from './components/page-components/people/person/aagaronyan.component';
-import Facilities from './components/page-components/facilities/facilitiescomponent';
+import Facilities from './components/page-components/facilities/facilities.component';
+import Events from './components/page-components/events/events.component';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             <Route exact path="/imaging-people-swashington" element={<Swashington />}/>
             <Route exact path="/imaging-people-aagaronyan" element={<Aagaronyan />}/>
             <Route exact path="/facilities" element={<Facilities />}/>
+            <Route exact path="/events" element={<Events />}/>
             <Route exact path="/test" element={<Test />}/>
             <Route path="*" element={<NotFound />}/>
         </Routes>

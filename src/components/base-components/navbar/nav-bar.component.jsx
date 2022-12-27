@@ -61,6 +61,9 @@ const NavBar = () => {
             <li>
               <a href="/people">People</a>
             </li>
+            <li>
+              <a href="/events">Events</a>
+            </li>
           </ul>
         </nav>
       </header>
