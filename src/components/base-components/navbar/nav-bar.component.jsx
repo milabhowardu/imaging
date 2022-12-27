@@ -6,31 +6,31 @@ const NavBar = () => {
   useEffect(() => {
     function handleResize() {
       let x = document.getElementById("myLinks");
-			let w = document.documentElement.clientWidth;
-			if(w >= 1250) {
-				x.style.display = "flex";
-			} else{
-				x.style.display = "none";
-			}
+      let w = document.documentElement.clientWidth;
+      if (w >= 1250) {
+        x.style.display = "flex";
+      } else {
+        x.style.display = "none";
+      }
     }
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const menuExpand = () =>{
+  const menuExpand = () => {
     let x = document.getElementById("myLinks");
     if (x.style.display === "flex") {
       x.style.display = "none";
     } else {
       x.style.display = "flex";
     }
-  }
+  };
 
   return (
     <div className={classes.wrapper}>
       <div className={classes.siteTopHat}>
-        <div ></div>
+        <div></div>
       </div>
       <header className={classes.siteHeader}>
         <div className={classes.compartment}>
@@ -45,7 +45,7 @@ const NavBar = () => {
           </h3>
         </div>
         <a className={classes.faBars} onClick={menuExpand}>
-          <FaBars size={32}/>
+          <FaBars size={32} />
         </a>
         <nav className={classes.nav} id="myLinks">
           <ul>
@@ -53,14 +53,13 @@ const NavBar = () => {
               <a href=".">About Us</a>
             </li>
             <li>
-               <a href="/research">
-                Research
-              </a>
+              <a href="/research">Research</a>
             </li>
             <li>
-               <a href="/people">
-                People
-              </a>
+              <a href="/facilities">Facilities</a>
+            </li>
+            <li>
+              <a href="/people">People</a>
             </li>
           </ul>
         </nav>
