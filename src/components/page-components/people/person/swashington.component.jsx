@@ -19,6 +19,12 @@ const Swashington = () => {
     ],
     publicationsList:
       `
+      S.D. Washington. Can chaos bring order to the study of functional connectivity in neurodevelopmental disorders? Commentary on: “Altered periodic dynamics in the default mode network in autism and ADHD” Biological Psychiatry (2022), 91(11); 918-919;doi: 10.1016/j.biopsych.2022.03.014.
+      <br /><br />
+      J.N. Baraniuk, A. Amar, H. Pepermintwala, S.D. Washington.  Differential effects of exercise on fMRI of the midbrain Ascending Arousal Network nuclei in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) and Gulf War Illness (GWI) in a model of postexertional malaise (PEM).  Brain Sciences (2022).12(1):78. doi: 10.3390/brainsci12010078
+      <br /><br />
+      S.D. Washington, D.L. Pritchett, G.A. Keliris, J.S. Kanwal.  Hemispheric and sex differences in mustached bat primary auditory cortex revealed by neural responses to slow frequency modulations.  Symmetry (2021), 13(6), 1037. https://doi.org/10.3390/sym13061037.
+      <br /><br />
       S.D. Washington, R.U. Rayhan, R. Garner, D. Provenzano, K. Zajur, F.M. Addiego, J.W. VanMeter, J.N. Baraniuk. Exercise alters brain activation in Gulf War Illness and Myalgic Encephalomyelitis/ Chronic Fatigue Syndrome. Brain Communications (2020). 2(2): fcaa070. doi: 10.1093/braincomms/fcaa070
       <br /><br />
       D. Provenzano, S.D. Washington, Y.J. Rao, M. Loew, J.N. Baraniuk. Machine learning detects pattern of differences in functional magnetic resonance imaging (fMRI) data between Chronic Fatigue Syndrome (CFS) and Gulf War Illness (GWI). Brain Sciences (2020) 10(7):456. doi: 10.3390/brainsci10070456

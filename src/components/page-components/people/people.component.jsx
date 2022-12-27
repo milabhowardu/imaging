@@ -60,7 +60,7 @@ const People = () => {
       name: "Artur Agaronyan, BS",
       title: "PhD Student",
       phone: "(202) 865-3741",
-      email: "aagarony@terpmail.umd.edu",
+      email: "agaronyan@cua.edu",
       moreInfo: "/imaging-people-aagaronyan",
     },
   ];
