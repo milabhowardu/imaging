@@ -5,7 +5,7 @@ import Hero from "../../base-components/hero/hero.component";
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { HiArrowRight } from "react-icons/hi";
 
-import background from "../../../assets/images/Header_people.jpg";
+import background from "../../../assets/images/People.jpg";
 import pwang from "../../../assets/images/PWang.jpg";
 import wtu from "../../../assets/images/WTu.jpg";
 import linCrop from "../../../assets/images/Lin_Crop.jpg";
