@@ -18,6 +18,7 @@ import Swashington from './components/page-components/people/person/swashington.
 import Aagaronyan from './components/page-components/people/person/aagaronyan.component';
 import Facilities from './components/page-components/facilities/facilities.component';
 import Events from './components/page-components/events/events.component';
+import Contact from './components/page-components/contact/contact.component';
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
             <Route exact path="/imaging-people-aagaronyan" element={<Aagaronyan />}/>
             <Route exact path="/facilities" element={<Facilities />}/>
             <Route exact path="/events" element={<Events />}/>
-            <Route exact path="/test" element={<Test />}/>
+            <Route exact path="/contact" element={<Contact />}/>
             <Route path="*" element={<NotFound />}/>
         </Routes>
       </Router>

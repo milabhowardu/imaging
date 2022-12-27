@@ -64,6 +64,9 @@ const NavBar = () => {
             <li>
               <a href="/events">Events</a>
             </li>
+            <li>
+              <a href="/contact">Contact Us</a>
+            </li>
           </ul>
         </nav>
       </header>
