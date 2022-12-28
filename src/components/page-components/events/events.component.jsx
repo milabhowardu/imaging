@@ -19,7 +19,9 @@ const Events = () => {
             <MdOutlineEventAvailable size={25} /> Event Announcements
           </div>
         </div>
-
+        <div className={classes.events}>
+            Currently, there are no scheduled events planned.
+        </div>
 
       </div>
     </>
