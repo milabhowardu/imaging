@@ -13,7 +13,7 @@ const Contact = () => {
       <Hero background={background} title="" />
       <div className={classes.wrapper}>
         <div className={classes.navPath}>
-          HOME » <strong>Contact</strong>
+          HOME » <strong>Contact Us</strong>
         </div>
         <div className={classes.blockHeader}>
           <div>
