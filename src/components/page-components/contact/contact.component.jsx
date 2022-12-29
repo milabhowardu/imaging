@@ -5,7 +5,7 @@ import Hero from "../../base-components/hero/hero.component";
 import { FiMapPin } from "react-icons/fi";
 
 import background from "../../../assets/images/Direction.jpg";
-import map from "../../../assets/images/Map.png";
+// import map from "../../../assets/images/Map.png";
 
 const Contact = () => {
   return (

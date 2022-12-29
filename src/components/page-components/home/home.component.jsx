@@ -1,7 +1,14 @@
 import React from "react";
 import classes from "./home.module.sass";
+
+import { GiBugleCall } from "react-icons/gi";
+import { GiArchiveResearch } from "react-icons/gi";
+import { MdOutlineEventAvailable } from "react-icons/md";
+
 import Hero from "../../base-components/hero/hero.component";
 import background from "../../../assets/images/HomePage.jpg";
+
+import HowardRCMI from "../../../assets/images/HowardRCMI.jpg";
 
 const Home = () => {
   return (
@@ -11,10 +18,52 @@ const Home = () => {
         title="Howard University Imaging Core Facility"
       />
       <div className={classes.wrapper}>
-        <div className={classes.navPath}>
+        {/* <div className={classes.navPath}>
           HOME » <strong>ABOUT US</strong>
+        </div> */}
+        <div className={classes.homeHeader}>Molecular Imaging Lab</div>
+        <div className={classes.homeBlurb}>
+          The Howard University Biomedical Imaging Core uses scientific
+          expertise and state-of-the-art laboratories equipped with the
+          necessary modern imaging equipment for the support of biomedical
+          research and training at Howard University.
         </div>
+
+        <div className={classes.blockHeader}>
+          <div>
+            <GiBugleCall size={25} /> Our Vision & Goals
+          </div>
+        </div>
+        {/* 
         <div className={classes.featuredInner}>
+          The Howard University Molecular Imaging Lab supports discovery,
+          learning and interdisciplinary research using advanced imaging
+          technology for the research community in Howard University and the
+          Washington DC area.
+        </div> */}
+
+        <div className={classes.featuredInner}>
+          <img src={HowardRCMI} />
+          <div>
+            <ul>
+              <li>
+                To provide state-of-the-art instrumentation, technical expertise
+                and services for molecular, cellular and <i>in vivo</i> imaging
+              </li>
+              <li>
+                To offer student and faculty training opportunities in
+                biomedical imaging sciences through methodology-centered
+                seminars, workshops, mini-courses and internships
+              </li>
+              <li>
+                To foster new interdisciplinary research collaborations using
+                modern imaging techniques
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* <div className={classes.featuredInner}>
           <h3>Mission</h3>
           <p>
             The Howard University Molecular Imaging Lab supports discovery,
@@ -22,8 +71,8 @@ const Home = () => {
             technology for the research community in Howard University and the
             Washington DC area.
           </p>
-        </div>
-        <div className={classes.featuredInner}>
+        </div> */}
+        {/* <div className={classes.featuredInner}>
           <h3>Objectives</h3>
           <p>
             <ul>
@@ -42,10 +91,15 @@ const Home = () => {
               </li>
             </ul>
           </p>
+        </div> */}
+
+        <div className={classes.blockHeader}>
+          <div>
+            <GiArchiveResearch size={25} /> Research Focus Areas
+          </div>
         </div>
 
-        <div className={classes.featuredInner}>
-          <h3>Research Focus Areas</h3>
+        <div className={classes.featured}>
           <p>
             <strong>Imaging of Disease Animal Models</strong>
           </p>
@@ -117,6 +171,14 @@ const Home = () => {
             </li>
             <li>Elucidation of Metabolic Pathways (molecular imaging)</li>
           </ul>
+        </div>
+        <div className={classes.blockHeader}>
+          <div>
+            <MdOutlineEventAvailable size={25} /> Event Announcements
+          </div>
+        </div>
+        <div className={classes.featured}>
+            Currently, there are no scheduled events planned.
         </div>
       </div>
     </>
