@@ -4,11 +4,15 @@ import classes from "./home.module.sass";
 import { GiBugleCall } from "react-icons/gi";
 import { GiArchiveResearch } from "react-icons/gi";
 import { MdOutlineEventAvailable } from "react-icons/md";
+import { GoMegaphone } from "react-icons/go";
 
 import Hero from "../../base-components/hero/hero.component";
 import background from "../../../assets/images/HomePage.jpg";
 
 import HowardRCMI from "../../../assets/images/HowardRCMI.jpg";
+import research_tbi from "../../../assets/images/research_tbi-1_tn.jpg";
+import research_chd from "../../../assets/images/research_chd-1.jpg";
+import research_molecular_mr from "../../../assets/images/research_molecular_mr-1_tn.jpg";
 
 const Home = () => {
   return (
@@ -178,9 +182,35 @@ const Home = () => {
           </div>
         </div>
         <div className={classes.featured}>
-            Currently, there are no scheduled events planned.
+          Currently, there are no scheduled events planned.
+        </div>
+        <div className={classes.blockHeader}>
+          <div>
+            <GoMegaphone size={28} /> Research Highlights
+          </div>
+        </div>
+        <div  className={classes.featuredResearch}>
+          <div className={classes.featuredResearchHight}>
+            <img src={research_tbi} />
+            <div>
+              <div>High-Throughput Image Analysis of MRI and PET Imaging</div>
+            </div>
+          </div>
+          <div className={classes.featuredResearchHight}>
+            <img src={research_chd} />
+            <div>
+              <div>High-Throughput Image Analysis of MRI and PET Imaging</div>
+            </div>
+          </div>
+          <div className={classes.featuredResearchHight}>
+            <img src={research_molecular_mr} />
+            <div>
+              <div>High-Throughput Image Analysis of MRI and PET Imaging</div>
+            </div>
+          </div>
         </div>
       </div>
+      
     </>
   );
 };

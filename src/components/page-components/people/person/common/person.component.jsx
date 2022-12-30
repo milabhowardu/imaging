@@ -50,7 +50,7 @@ const Person = ({ person }) => {
           <div className={classes.header}>Publications List</div>
             {publicationsListLink && (
               <div>
-                <a href={publicationsListLink} target="_blank">
+                <a href={publicationsListLink} target="_blank" className={classes.link}>
                   {person.publicationsListLink}
                 </a>
               </div>

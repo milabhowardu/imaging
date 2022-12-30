@@ -41,22 +41,22 @@
     margin: 50px 0
     display: flex
     & > img
-        max-width: 500px    
+        max-width: 500px
     & > div
-        padding: 60px 
-        & > ul > li 
+        padding: 60px
+        & > ul > li
             margin-bottom: 20px
     @media screen and (max-width: 960px)
         & > div
-            padding: 25px 
+            padding: 25px
         & > img
-            max-width: 350px 
+            max-width: 350px
     @media screen and (max-width: 690px)
         flex-direction: column
         background-color: #F2F2F2
         border-left: 0
         & > div
-            padding: 20px 0 
+            padding: 20px 0
 
 @mixin featured()
     padding: 12px
@@ -76,7 +76,61 @@
         list-style: disc
         line-height: 1.5
 
+@mixin featuredResearch()
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: stretch
     
+    & > .featuredResearchHight
+        flex-shrink: 1
+        display: flex
+        flex-direction: column
+        background-color: #fff
+        width: 300px
+        &:hover
+            background-color: rgb(253, 212, 7)
+        & > img
+            width: 300px
+            height: 330px
+        & > div
+            color: #003A63
+            padding: 20px
+            font-size: 1.1rem
+            font-weight: 700
+            font-family: "Serif12Beta", serif
+            cursor: pointer
+    @media screen and (max-width: 960px)
+        & > .featuredResearchHight
+            width: 250px
+            & > img
+                width: 250px
+                height: 280px
+    @media screen and (max-width: 860px)
+        & > .featuredResearchHight
+            width: 230px
+            & > img
+                width: 230px
+                height: 250px
+    @media screen and (max-width: 760px)
+        & > .featuredResearchHight
+            width: 200px
+            & > img
+                width: 200px
+    @media screen and (max-width: 690px)
+        flex-direction: column
+        & > .featuredResearchHight
+            padding: 15px
+            max-width: 100%
+            flex-direction: row
+            margin-bottom: 20px
+            width: 100%
+            & > div
+                padding-left: 20px
+                padding-top: 0
+            & > img
+                width: 150px
+                height: auto
 
 @mixin headerTitle()
     color: #002A47
@@ -97,6 +151,8 @@
         @include featuredInner()
     .featured
         @include featured()
+    .featuredResearch
+        @include featuredResearch()
     .compartment
         .headerTitle
             @headerTitle()
