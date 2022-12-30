@@ -87,12 +87,12 @@
         display: flex
         flex-direction: column
         background-color: #fff
-        width: 350px
+        width: calc( (100% - 50px) / 3 )
         &:hover
             background-color: #e2c46d
         & > img
-            width: 350px
-            height: 380px
+            // width: 350px
+            height: 300px
         & > div
             padding: 20px 20px
             & > .title
@@ -105,29 +105,27 @@
                 padding: 10px 0
                 font-size: 0.8rem
                 // color: #aaa
-    @media screen and (max-width: 1250px)
-        & > .featuredResearchHight
-            width: 310px
-            & > img
-                width: 310px
-                height: 350px
+    // @media screen and (max-width: 1250px)
+    //     & > .featuredResearchHight
+    //         width: 310px
+    //         & > img
+    //             width: 310px
+    //             height: 350px
     @media screen and (max-width: 960px)
         & > .featuredResearchHight
-            width: 270px
             & > img
-                width: 270px
-                height: 300px
-    @media screen and (max-width: 860px)
-        & > .featuredResearchHight
-            width: 230px
-            & > img
-                width: 230px
                 height: 250px
-    @media screen and (max-width: 760px)
-        & > .featuredResearchHight
-            width: 200px
-            & > img
-                width: 200px
+    // @media screen and (max-width: 860px)
+    //     & > .featuredResearchHight
+    //         width: 230px
+    //         & > img
+    //             width: 230px
+    //             height: 250px
+    // @media screen and (max-width: 760px)
+    //     & > .featuredResearchHight
+    //         width: 200px
+    //         & > img
+    //             width: 200px
     @media screen and (max-width: 690px)
         flex-direction: column
         & > .featuredResearchHight
@@ -141,7 +139,8 @@
                 padding-top: 0
             & > img
                 width: 150px
-                height: auto
+                height: 200px
+                // height: auto
 
 @mixin headerTitle()
     color: #002A47
