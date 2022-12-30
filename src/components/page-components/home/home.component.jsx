@@ -10,6 +10,7 @@ import Hero from "../../base-components/hero/hero.component";
 import background from "../../../assets/images/HomePage.jpg";
 
 import HowardRCMI from "../../../assets/images/HowardRCMI.jpg";
+import research_atlas from "../../../assets/images/research_atlas-1_tn.jpg";
 import research_tbi from "../../../assets/images/research_tbi-1_tn.jpg";
 import research_chd from "../../../assets/images/research_chd-1.jpg";
 import research_molecular_mr from "../../../assets/images/research_molecular_mr-1_tn.jpg";
@@ -191,23 +192,23 @@ const Home = () => {
         </div>
         <div  className={classes.featuredResearch}>
           <div className={classes.featuredResearchHight}>
-            <img src={research_tbi} />
+            <img src={research_atlas} />
             <div>
               <div className={classes.title}>High-Throughput Image Analysis of MRI and PET Imaging</div>
               <div className={classes.author}>Tsang-Wei Tu, Department of Radiology; Yeona Kang, Department of Mathematics; Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National</div>
             </div>
           </div>
           <div className={classes.featuredResearchHight}>
-            <img src={research_chd} />
+            <img src={research_tbi} />
             <div>
-              <div  className={classes.title}>High-Throughput Image Analysis of MRI and PET Imaging</div>
+              <div  className={classes.title}>Imaging Tissue Damage and Metabolic Disorders in Diffuse Traumatic Brain Injury</div>
               <div className={classes.author}>Tsang-Wei Tu, Department of Radiology; Joseph Frank, Radiology and Imaging Sciences, Clinical Center, National Institutes of Health</div>
             </div>
           </div>
           <div className={classes.featuredResearchHight}>
-            <img src={research_molecular_mr} />
+            <img src={research_chd} />
             <div>
-              <div  className={classes.title}>High-Throughput Image Analysis of MRI and PET Imaging</div>
+              <div  className={classes.title}>Brain Injury in Congenital Heart Disease</div>
               <div className={classes.author}>Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National</div>
             </div>
           </div>
