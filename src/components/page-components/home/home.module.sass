@@ -87,25 +87,36 @@
         display: flex
         flex-direction: column
         background-color: #fff
-        width: 300px
+        width: 350px
         &:hover
             background-color: rgb(253, 212, 7)
         & > img
-            width: 300px
-            height: 330px
+            width: 350px
+            height: 380px
         & > div
-            color: #003A63
-            padding: 20px
-            font-size: 1.1rem
-            font-weight: 700
-            font-family: "Serif12Beta", serif
-            cursor: pointer
+            padding: 20px 20px
+            & > .title
+                color: #003A63
+                font-size: 1.1rem
+                font-weight: 900
+                font-family: "Serif12Beta", serif
+                cursor: pointer
+            & > .author
+                padding: 10px 0
+                font-size: 0.8rem
+                // color: #aaa
+    @media screen and (max-width: 1250px)
+        & > .featuredResearchHight
+            width: 310px
+            & > img
+                width: 310px
+                height: 350px
     @media screen and (max-width: 960px)
         & > .featuredResearchHight
-            width: 250px
+            width: 270px
             & > img
-                width: 250px
-                height: 280px
+                width: 270px
+                height: 300px
     @media screen and (max-width: 860px)
         & > .featuredResearchHight
             width: 230px

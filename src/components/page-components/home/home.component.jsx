@@ -193,19 +193,22 @@ const Home = () => {
           <div className={classes.featuredResearchHight}>
             <img src={research_tbi} />
             <div>
-              <div>High-Throughput Image Analysis of MRI and PET Imaging</div>
+              <div className={classes.title}>High-Throughput Image Analysis of MRI and PET Imaging</div>
+              <div className={classes.author}>Tsang-Wei Tu, Department of Radiology; Yeona Kang, Department of Mathematics; Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National</div>
             </div>
           </div>
           <div className={classes.featuredResearchHight}>
             <img src={research_chd} />
             <div>
-              <div>High-Throughput Image Analysis of MRI and PET Imaging</div>
+              <div  className={classes.title}>High-Throughput Image Analysis of MRI and PET Imaging</div>
+              <div className={classes.author}>Tsang-Wei Tu, Department of Radiology; Joseph Frank, Radiology and Imaging Sciences, Clinical Center, National Institutes of Health</div>
             </div>
           </div>
           <div className={classes.featuredResearchHight}>
             <img src={research_molecular_mr} />
             <div>
-              <div>High-Throughput Image Analysis of MRI and PET Imaging</div>
+              <div  className={classes.title}>High-Throughput Image Analysis of MRI and PET Imaging</div>
+              <div className={classes.author}>Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National</div>
             </div>
           </div>
         </div>
