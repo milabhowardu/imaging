@@ -83,16 +83,21 @@
     align-items: stretch
     
     & > .featuredResearchHight
-        flex-shrink: 1
+        // flex-shrink: 1
         display: flex
         flex-direction: column
         background-color: #fff
         width: calc( (100% - 50px) / 3 )
         &:hover
             background-color: #e2c46d
-        & > img
-            // width: 350px
-            height: 290px
+        & > .researchImg
+            background-color: #000
+            height: 396.3px
+            width: 100%
+            vertical-align: center
+            & > img
+                width: 100%
+                object-fit: contain
         & > div
             padding: 20px 20px
             & > .title
@@ -104,28 +109,6 @@
             & > .author
                 padding: 10px 0
                 font-size: 0.8rem
-                // color: #aaa
-    // @media screen and (max-width: 1250px)
-    //     & > .featuredResearchHight
-    //         width: 310px
-    //         & > img
-    //             width: 310px
-    //             height: 350px
-    @media screen and (max-width: 960px)
-        & > .featuredResearchHight
-            & > img
-                height: 250px
-    // @media screen and (max-width: 860px)
-    //     & > .featuredResearchHight
-    //         width: 230px
-    //         & > img
-    //             width: 230px
-    //             height: 250px
-    // @media screen and (max-width: 760px)
-    //     & > .featuredResearchHight
-    //         width: 200px
-    //         & > img
-    //             width: 200px
     @media screen and (max-width: 690px)
         flex-direction: column
         & > .featuredResearchHight
@@ -138,12 +121,12 @@
             & > div
                 padding-left: 20px
                 padding-top: 0
-            & > img
+            & > .researchImg
                 width: 100%
-                height: 100%
-                // min-height: 150px
-                // height: auto
-                // object-fit: contain
+                height: auto
+                & > img
+                    width: 100%
+                    height: 100%
 
 @mixin headerTitle()
     color: #002A47

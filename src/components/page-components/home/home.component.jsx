@@ -39,14 +39,6 @@ const Home = () => {
             <GiBugleCall size={25} /> Our Vision & Goals
           </div>
         </div>
-        {/* 
-        <div className={classes.featuredInner}>
-          The Howard University Molecular Imaging Lab supports discovery,
-          learning and interdisciplinary research using advanced imaging
-          technology for the research community in Howard University and the
-          Washington DC area.
-        </div> */}
-
         <div className={classes.featuredInner}>
           <img src={HowardRCMI} />
           <div>
@@ -67,37 +59,6 @@ const Home = () => {
             </ul>
           </div>
         </div>
-
-        {/* <div className={classes.featuredInner}>
-          <h3>Mission</h3>
-          <p>
-            The Howard University Molecular Imaging Lab supports discovery,
-            learning and interdisciplinary research using advanced imaging
-            technology for the research community in Howard University and the
-            Washington DC area.
-          </p>
-        </div> */}
-        {/* <div className={classes.featuredInner}>
-          <h3>Objectives</h3>
-          <p>
-            <ul>
-              <li>
-                To provide state-of-the-art instrumentation, technical expertise
-                and services for molecular, cellular and <i>in vivo</i> imaging
-              </li>
-              <li>
-                To offer student and faculty training opportunities in
-                biomedical imaging sciences through methodology-centered
-                seminars, workshops, mini-courses and internships
-              </li>
-              <li>
-                To foster new interdisciplinary research collaborations using
-                modern imaging techniques
-              </li>
-            </ul>
-          </p>
-        </div> */}
-
         <div className={classes.blockHeader}>
           <div>
             <GiArchiveResearch size={25} /> Research Focus Areas
@@ -192,21 +153,22 @@ const Home = () => {
         </div>
         <div  className={classes.featuredResearch}>
           <div className={classes.featuredResearchHight}>
-            <img src={research_atlas} />
+            
+            <div className={classes.researchImg}><img src={research_atlas} /></div>
             <div>
               <div className={classes.title}>High-Throughput Image Analysis of MRI and PET Imaging</div>
               <div className={classes.author}>Tsang-Wei Tu, Department of Radiology; Yeona Kang, Department of Mathematics; Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National</div>
             </div>
           </div>
           <div className={classes.featuredResearchHight}>
-            <img src={research_tbi} />
+            <div className={classes.researchImg}><img src={research_tbi} /></div>
             <div>
               <div  className={classes.title}>Imaging Tissue Damage and Metabolic Disorders in Diffuse Traumatic Brain Injury</div>
               <div className={classes.author}>Tsang-Wei Tu, Department of Radiology; Joseph Frank, Radiology and Imaging Sciences, Clinical Center, National Institutes of Health</div>
             </div>
           </div>
           <div className={classes.featuredResearchHight}>
-            <img src={research_chd} />
+            <div className={classes.researchImg}><img src={research_chd} /></div>
             <div>
               <div  className={classes.title}>Brain Injury in Congenital Heart Disease</div>
               <div className={classes.author}>Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National</div>
