@@ -148,6 +148,14 @@ const Home = () => {
         </div>
         <div className={classes.blockHeader}>
           <div>
+            <MdOutlineEventAvailable size={25} /> OPEN POSITIONS
+          </div>
+        </div>
+        <div className={classes.featured}>
+          Currently, there are no open positions.
+        </div>
+        <div className={classes.blockHeader}>
+          <div>
             <GoMegaphone size={28} /> Research Highlights
           </div>
         </div>

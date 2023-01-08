@@ -36,11 +36,11 @@ const Footer = () => {
             <a href="/events">Events</a>
           </li>
           <li>
+            <a href="/positions">Open Positions</a>
+          </li> 
+          <li>
             <a href="/contact">Contact Us</a>
           </li>
-          {/*<li>
-            <a href="positions.html">Open Positions</a>
-          </li> */}
         </ul>
       </div>
 

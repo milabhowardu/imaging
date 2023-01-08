@@ -7,7 +7,7 @@ const NavBar = () => {
     function handleResize() {
       let x = document.getElementById("myLinks");
       let w = document.documentElement.clientWidth;
-      if (w >= 1250) {
+      if (w >= 1350) {
         x.style.display = "flex";
       } else {
         x.style.display = "none";
@@ -63,6 +63,9 @@ const NavBar = () => {
             </li>
             <li>
               <a href="/events">Events</a>
+            </li>
+            <li>
+              <a href="/positions">Open Positions</a>
             </li>
             <li>
               <a href="/contact">Contact Us</a>

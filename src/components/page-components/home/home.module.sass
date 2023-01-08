@@ -91,7 +91,7 @@
         &:hover
             background-color: #e2c46d
         & > .researchImg
-            padding: 0
+            padding: 0  
             background-color: #000
             height: 396.3px
             width: 100%
@@ -110,6 +110,10 @@
             & > .author
                 padding: 10px 0
                 font-size: 0.8rem
+    @media screen and (max-width: 890px)
+        & > .featuredResearchHight
+            & > .researchImg
+                height: 260px
     @media screen and (max-width: 690px)
         flex-direction: column
         & > .featuredResearchHight
