@@ -5,6 +5,7 @@ import { GiBugleCall } from "react-icons/gi";
 import { GiArchiveResearch } from "react-icons/gi";
 import { MdOutlineEventAvailable } from "react-icons/md";
 import { GoMegaphone } from "react-icons/go";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import Hero from "../../base-components/hero/hero.component";
 import background from "../../../assets/images/HomePage.jpg";
@@ -148,7 +149,7 @@ const Home = () => {
         </div>
         <div className={classes.blockHeader}>
           <div>
-            <MdOutlineEventAvailable size={25} /> OPEN POSITIONS
+            <BsFillPersonLinesFill size={25} /> OPEN POSITIONS
           </div>
         </div>
         <div className={classes.featured}>

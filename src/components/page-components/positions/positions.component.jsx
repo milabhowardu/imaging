@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./positions.module.sass";
 import Hero from "../../base-components/hero/hero.component";
 
-import { ImLab } from "react-icons/im";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import background from "../../../assets/images/Positions.jpg";
 
@@ -16,7 +16,7 @@ const Positions = () => {
         </div>
         <div className={classes.blockHeader}>
           <div>
-            <ImLab size={25} /> Open Posistions
+            <BsFillPersonLinesFill size={25} /> Open Posistions
           </div>
         </div>
         <div className={classes.positions}>
