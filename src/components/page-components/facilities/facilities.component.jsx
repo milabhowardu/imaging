@@ -40,30 +40,104 @@ const Facilities = () => {
         </div>
         <div className={classes.featuredInner}>
           <div>
-            <h2>PET/SPECT/CT</h2>
-            The laboratory has a Bruker Albira PET/SPECT/CT machine currently
-            undergoing installation and testing.
-          </div>
-          <img src={PET} />
-        </div>
-        <div className={classes.featuredInner}>
-          <img src={IVISSpectrum2} />
-          <div>
             <h2> Fluorescent and Bioluminescent Optical Imaging</h2>
             The laboratory has a PerkinElmer IVIS Spectrum imaging system which
             has brought physics and biology together for the practice of
             real-time in vivo imaging.
           </div>
+          <img src={IVISSpectrum2} />
+        </div>
+        <div className={classes.featuredInner}>
+          <img src={PET} />
+          <div>
+            <h2>PET/SPECT/CT</h2>
+            The laboratory has a Bruker Albira PET/SPECT/CT machine currently
+            undergoing installation and testing.
+          </div>
+        </div>
+
+        <div className={classes.featuredInner}>
+          <div className={classes.featuredInner__other}>
+            <h2> Other Facilities</h2>
+
+            <div className={classes.container}>
+              <div>
+                <h3>MECHANICAL AND ELECTRONIC SHOP</h3>
+                The mechanical and electronic shop is designed for constructing
+                RF probes for various imaging purposes and various sizes of
+                animals.
+              </div>
+              <div>
+                <h3>MOLECULAR BIOLOGY</h3>
+                The laboratory has a facility for Molecular Biology featuring
+                equipment for cell culture, molecular analysis, and molecular
+                probe synthesis and in vitro characterization.
+              </div>
+              <div>
+                <h3>RADIOCHEMISTRY</h3>
+                The laboratory has a facility for radiochemistry, featuring
+                equipment for preparation of radionucleotides for PET imaging as
+                well as preparation of other chemical agents.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={classes.faclities}>
+          <h2>Usage Fees</h2>
+          
+            <table summary="Usage Fees" cellspacing="0">
+              <tbody>
+                <tr>
+                  <th>Facility/Service</th>
+                  <th>Hourly Rate</th>
+                  <th>Daily Rate</th>
+                </tr>
+                <tr>
+                  <td>Bruker 9.4T MRI/MRS</td>
+                  <td>$250</td>
+                  <td>$1,200</td>
+                </tr>
+                <tr>
+                  <td>Bruker 7T MRI/MRS</td>
+                  <td>$250</td>
+                  <td>$1,200</td>
+                </tr>
+                <tr>
+                  <td>GE 3T Clinical MRI/MRS</td>
+                  <td>$600</td>
+                  <td>$1,500</td>
+                </tr>
+                <tr>
+                  <td>PerkinElmer IVIS Spectrum</td>
+                  <td>$150</td>
+                  <td>$600</td>
+                </tr>
+                <tr>
+                  <td>Bruker Albira PET/SPECT/CT</td>
+                  <td>$150</td>
+                  <td>$600</td>
+                </tr>
+                <tr>
+                  <td>Image Processing and Analysis</td>
+                  <td>$70</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          
         </div>
 
         <div className={classes.faclities}>
           <h2>Scheduling</h2>
           <div>
-            For new projects, please contact Dr. Paul Wang (pwang@howard.edu) to schedule an initial meeting to discuss feasibility and project timeline.
+            For new projects, please contact Dr. Paul Wang (pwang@howard.edu) to
+            schedule an initial meeting to discuss feasibility and project
+            timeline.
           </div>
           <div>
-            For scheduling established projects: Please use Idea Elan or contact Stephen Lin (stephen.lin@howard.edu)
-
+            For scheduling established projects: Please use Idea Elan or contact
+            Stephen Lin (stephen.lin@howard.edu)
           </div>
         </div>
       </div>
