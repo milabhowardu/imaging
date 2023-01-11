@@ -165,21 +165,21 @@ const Home = () => {
             
             <div className={classes.researchImg}><img src={research_atlas} /></div>
             <div>
-              <div className={classes.title}>High-Throughput Image Analysis of MRI and PET Imaging</div>
+              <div className={classes.title}><a href="/research/petatlas">High-Throughput Image Analysis of MRI and PET Imaging</a></div>
               <div className={classes.author}>Tsang-Wei Tu, Department of Radiology; Yeona Kang, Department of Mathematics; Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National</div>
             </div>
           </div>
           <div className={classes.featuredResearchHight}>
             <div className={classes.researchImg}><img src={research_tbi} /></div>
             <div>
-              <div  className={classes.title}>Imaging Tissue Damage and Metabolic Disorders in Diffuse Traumatic Brain Injury</div>
+              <div  className={classes.title}><a href="/research/tbi">Imaging Tissue Damage and Metabolic Disorders in Diffuse Traumatic Brain Injury</a></div>
               <div className={classes.author}>Tsang-Wei Tu, Department of Radiology; Joseph Frank, Radiology and Imaging Sciences, Clinical Center, National Institutes of Health</div>
             </div>
           </div>
           <div className={classes.featuredResearchHight}>
             <div className={classes.researchImg}><img src={research_chd} /></div>
             <div>
-              <div  className={classes.title}>Brain Injury in Congenital Heart Disease</div>
+              <div  className={classes.title}><a href="/research/chd">Brain Injury in Congenital Heart Disease</a></div>
               <div className={classes.author}>Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National</div>
             </div>
           </div>

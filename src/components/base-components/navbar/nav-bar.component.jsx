@@ -38,7 +38,7 @@ const NavBar = () => {
             Howard University
           </a>
           <h3>
-            <a href=".">
+            <a href="/">
               Molecular Imaging <br />
               Laboratory
             </a>

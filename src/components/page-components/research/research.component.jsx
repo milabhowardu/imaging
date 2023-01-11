@@ -11,7 +11,7 @@ import { IoMdPaper, IoMdPeople } from "react-icons/io";
 import { GoMegaphone } from "react-icons/go";
 import { HiArrowRight } from "react-icons/hi";
 
-const Research = () => {
+const Research = ({reaserchHighlightsList}) => {
   return (
     <>
       <Hero background={background} title="" />
@@ -32,7 +32,7 @@ const Research = () => {
             </div>
           </div>
           <div className={classes.textBlock}>
-            <ReasrchHighlights />
+            <ReasrchHighlights reaserchHighlightsList={reaserchHighlightsList}/>
           </div>
           <div className={classes.blockHeader}>
             <div>
