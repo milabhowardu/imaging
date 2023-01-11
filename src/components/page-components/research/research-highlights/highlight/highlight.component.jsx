@@ -4,17 +4,6 @@ import classes from "./highlight.module.sass";
 import { IoMdPaper } from "react-icons/io";
 
 const HighLight = ({ research }) => {
-  // const {
-  //   name,
-  //   title,
-  //   email,
-  //   phone,
-  //   biography,
-  //   areasofExpertise,
-  //   publicationsListLink,
-  //   publicationsList,
-  // } = person;
-
   return (
     <div className={classes.wrapper}>
       <div className={classes.navPath}>
@@ -25,7 +14,27 @@ const HighLight = ({ research }) => {
           <IoMdPaper size={30} /> {research.title}
         </div>
       </div>
-      
+
+      <div>{research.description}</div>
+      {research.hightlightImg &&
+        research.hightlightImg.map((img) => (
+          <div className={classes.imgBlur}>
+            <img src={img.img} />
+
+            <div dangerouslySetInnerHTML={{ __html: img.blur }} />
+          </div>
+        ))}
+      <div className={classes.reference}>
+        <h2>References</h2>
+        <ul>
+          {research.references &&
+            research.references.map((reference) => (
+              <li>
+                <div dangerouslySetInnerHTML={{ __html: reference }} />
+              </li>
+            ))}
+        </ul>
+      </div>
     </div>
   );
 };
