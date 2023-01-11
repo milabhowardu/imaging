@@ -42,21 +42,30 @@
     font-size: 1.1rem
     font-weight: 600
     color: #002A47
-    // margin: 50px 0
     display: flex
     flex: 1 1 auto
+    border-bottom: 1px solid #F2F2F2
     & > img
         width: calc( 100% /2  )
     & > div
+        // background-color: #fff
         padding: 60px
         width: calc( 100% /2  )
-        margin-bottom: 20px
+        & > .viewMore
+            text-align: right
+            padding: 50px 0 0
+            font-size: 0.8rem
+            text-transform: uppercase
+            font-weight: 700
+            color: #003A63
+            cursor: pointer
         & > h2
             margin-bottom: 20px
             font-size: 1.5rem
             font-weight: 900
     & > .featuredInner__other
         width: 100%
+        // background-color: #F2F2F2
         & > .container
             display: flex
             justify-content: space-between
@@ -91,7 +100,6 @@
                 flex-direction: column
                 & > div
                     width: 100%
-        
 
 .wrapper
     @include wrapper()

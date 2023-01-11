@@ -3,6 +3,7 @@ import classes from "./facilities.module.sass";
 import Hero from "../../base-components/hero/hero.component";
 
 import { ImLab } from "react-icons/im";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 import background from "../../../assets/images/Facilities.jpg";
 import Bruker from "../../../assets/images/imaging-Facilities-Bruker.jpg";
@@ -31,12 +32,13 @@ const Facilities = () => {
         <div className={classes.featuredInner}>
           <img src={Bruker} />
           <div>
-            <h2>MRI and MRS</h2>
+            <h2 >MRI and MRS View more</h2>
             The laboratory has two state-of-the-art NMR machines: A Bruker
             Avance III 7.0 Tesla (300 MHz), 21 cm horizontal bore MRI/MRS system
             and a Bruker Avance 9.4 Tesla (400 MHz), 89 mm vertical bore MRI/MRS
             system.
-          </div>
+            <div className={classes.viewMore}> View More <BsFillArrowRightCircleFill size={22}/></div>
+          </div> 
         </div>
         <div className={classes.featuredInner}>
           <div>
@@ -44,6 +46,7 @@ const Facilities = () => {
             The laboratory has a PerkinElmer IVIS Spectrum imaging system which
             has brought physics and biology together for the practice of
             real-time in vivo imaging.
+            <div className={classes.viewMore}> View More <BsFillArrowRightCircleFill size={22}/></div>
           </div>
           <img src={IVISSpectrum2} />
         </div>
@@ -53,6 +56,7 @@ const Facilities = () => {
             <h2>PET/SPECT/CT</h2>
             The laboratory has a Bruker Albira PET/SPECT/CT machine currently
             undergoing installation and testing.
+            <div className={classes.viewMore}> View More <BsFillArrowRightCircleFill size={22}/></div>
           </div>
         </div>
 
