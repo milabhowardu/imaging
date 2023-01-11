@@ -32,7 +32,7 @@ const Facilities = () => {
         <div className={classes.featuredInner}>
           <img src={Bruker} />
           <div>
-            <h2 >MRI and MRS View more</h2>
+            <h2 >MRI and MRS</h2>
             The laboratory has two state-of-the-art NMR machines: A Bruker
             Avance III 7.0 Tesla (300 MHz), 21 cm horizontal bore MRI/MRS system
             and a Bruker Avance 9.4 Tesla (400 MHz), 89 mm vertical bore MRI/MRS
