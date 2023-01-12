@@ -25,6 +25,7 @@
 @mixin item()
     background-color: #fff
     display: flex
+    justify-content: space-between
     border-left: 0.5rem solid #191d32
     margin: 50px 0
     color: #002A47
@@ -34,7 +35,6 @@
         // min-height: 300px
     & > div
         padding: 1.25rem
-        position: relative
         & > h2 
             margin-bottom: 20px
             font-size: 1.5rem
@@ -44,9 +44,6 @@
             list-style: disc
             font-size: 0.9rem
         & > div 
-            position: absolute
-            bottom: 20px
-            right: 30px
             & > a
                 cursor: pointer 
                 color: #021fae

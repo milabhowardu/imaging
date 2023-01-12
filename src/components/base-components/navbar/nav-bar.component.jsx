@@ -50,7 +50,7 @@ const NavBar = () => {
         <nav className={classes.nav} id="myLinks">
           <ul>
             <li>
-              <a href=".">About Us</a>
+              <a href="/">About Us</a>
             </li>
             <li>
               <a href="/research">Research</a>

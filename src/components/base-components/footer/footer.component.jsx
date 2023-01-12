@@ -18,7 +18,7 @@ const Footer = () => {
       <div className={classnames(classes.footer, classes.sole)}>
         <ul>
           <li>
-            <a href=".">About Us</a>
+            <a href="/">About Us</a>
           </li>
           <li>
             <a href="/research" title="">
