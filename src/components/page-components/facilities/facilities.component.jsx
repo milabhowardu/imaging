@@ -37,7 +37,7 @@ const Facilities = () => {
             Avance III 7.0 Tesla (300 MHz), 21 cm horizontal bore MRI/MRS system
             and a Bruker Avance 9.4 Tesla (400 MHz), 89 mm vertical bore MRI/MRS
             system.
-            <div className={classes.viewMore}> View More <BsFillArrowRightCircleFill size={22}/></div>
+            <div className={classes.viewMore}> <a href='/facility/mri'>View More <BsFillArrowRightCircleFill size={22}/></a></div>
           </div> 
         </div>
         <div className={classes.featuredInner}>
@@ -46,7 +46,7 @@ const Facilities = () => {
             The laboratory has a PerkinElmer IVIS Spectrum imaging system which
             has brought physics and biology together for the practice of
             real-time in vivo imaging.
-            <div className={classes.viewMore}> View More <BsFillArrowRightCircleFill size={22}/></div>
+            <div className={classes.viewMore}> <a href='/facility/optical'>View More <BsFillArrowRightCircleFill size={22}/></a></div>
           </div>
           <img src={IVISSpectrum2} />
         </div>
@@ -56,7 +56,7 @@ const Facilities = () => {
             <h2>PET/SPECT/CT</h2>
             The laboratory has a Bruker Albira PET/SPECT/CT machine currently
             undergoing installation and testing.
-            <div className={classes.viewMore}> View More <BsFillArrowRightCircleFill size={22}/></div>
+            <div className={classes.viewMore}> <a href='/facility/pet'>View More <BsFillArrowRightCircleFill size={22}/></a></div>
           </div>
         </div>
 
