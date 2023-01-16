@@ -3,9 +3,15 @@ import classes from "./contact.module.sass";
 import Hero from "../../base-components/hero/hero.component";
 
 import { FiMapPin } from "react-icons/fi";
+import { FaInfoCircle } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { ImPhoneHangUp } from "react-icons/im";
+
+
+
 
 import background from "../../../assets/images/Direction.jpg";
-// import map from "../../../assets/images/Map.png";
+
 
 const Contact = () => {
   return (
@@ -21,8 +27,7 @@ const Contact = () => {
           </div>
         </div>
         <div className={classes.contact}>
-          <div className={classes.map}>
-            
+          <div className={classes.contactInfo}>
             <div className={classes.info}>
               <div className={classes.infoHeader}>Directions</div>
               <div className={classes.infoContext}>
@@ -53,7 +58,31 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <iframe src="https://maps.google.com/maps?t=m&amp;output=embed&amp;iwloc=near&amp;z=16&amp;q=520+W+Street+NW%2C+washington%2C+DC+20059" aria-label="" className={classes.googleMap}></iframe>
+            <iframe
+              src="https://maps.google.com/maps?t=m&amp;output=embed&amp;iwloc=near&amp;z=16&amp;q=520+W+Street+NW%2C+washington%2C+DC+20059"
+              aria-label=""
+              className={classes.googleMap}
+            ></iframe>
+          </div>
+        </div>
+        <div className={classes.blockHeader}>
+          <div>
+            <FaInfoCircle size={25} /> Primary Contacts
+          </div>
+        </div>
+        <div className={classes.contact}>
+          <div className={classes.contactInfo}>
+            <div className={classes.info}>
+              <div className={classes.infoHeader}>
+                Mr. Stephen Lin, Lab Manager
+              </div>
+              <div className={classes.infoContext}>
+                <ImPhoneHangUp size={25} /> (202) 865-3729
+              </div>
+              <div className={classes.infoContext}>
+                <HiOutlineMail size={25} /> <a href="mailto:stephen.lin@howard.edu"> stephen.lin@howard.edu</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

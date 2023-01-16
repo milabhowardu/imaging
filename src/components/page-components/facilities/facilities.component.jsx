@@ -133,15 +133,15 @@ const Facilities = () => {
         </div>
 
         <div className={classes.faclities}>
-          <h2>Scheduling</h2>
+          <h2>Scheduling: </h2>
           <div>
-            For new projects, please contact Dr. Paul Wang (pwang@howard.edu) to
+            For new projects, please contact Dr. Paul Wang (<a href='mailto:pwang@howard.edu'>pwang@howard.edu</a>) to
             schedule an initial meeting to discuss feasibility and project
             timeline.
           </div>
           <div>
-            For scheduling established projects: Please use Idea Elan or contact
-            Stephen Lin (stephen.lin@howard.edu)
+            For scheduling established projects: Please use <b><a href="http://secure3.ideaelan.com/Howard/Public/AppLogin.aspx">Idea Elan</a></b> or contact
+            Stephen Lin (<a href='mailto:pwang@howard.edu'>stephen.lin@howard.edu</a>)
           </div>
         </div>
       </div>
