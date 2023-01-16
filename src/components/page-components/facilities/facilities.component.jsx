@@ -90,7 +90,7 @@ const Facilities = () => {
         <div className={classes.faclities}>
           <h2>Usage Fees</h2>
           
-            <table summary="Usage Fees" cellspacing="0">
+            <table summary="Usage Fees" cellspacing="0" className={classes.feeTable}>
               <tbody>
                 <tr>
                   <th>Facility/Service</th>
