@@ -2,7 +2,7 @@ import React from "react";
 import Person from "./common/person.component";
 
 
-import pwang from "../../../../assets/images/PWang.jpg";
+import pwang from "../../../../assets/images/Paul Wang photo.jpg";
 
 const Pwang = () => {
   const person = {

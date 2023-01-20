@@ -6,7 +6,7 @@ import { IoPersonCircleSharp } from "react-icons/io5";
 import { HiArrowRight } from "react-icons/hi";
 
 import background from "../../../assets/images/People.jpg";
-import pwang from "../../../assets/images/PWang.jpg";
+import pwang from "../../../assets/images/Paul Wang photo.jpg";
 import wtu from "../../../assets/images/WTu.jpg";
 import linCrop from "../../../assets/images/Lin_Crop.jpg";
 import chhsu from "../../../assets/images/CHHsu.jpg";
