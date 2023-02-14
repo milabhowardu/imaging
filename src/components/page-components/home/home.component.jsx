@@ -11,7 +11,7 @@ import Hero from "../../base-components/hero/hero.component";
 import background from "../../../assets/images/HomePage.jpg";
 
 import HowardRCMI from "../../../assets/images/HowardRCMI.jpg";
-import research_atlas from "../../../assets/images/research_atlas-1_tn.jpg";
+import research_atlas from "../../../assets/images/imaging-research_petatlas-1.jpg";
 import research_tbi from "../../../assets/images/research_tbi-1_tn.jpg";
 import research_chd from "../../../assets/images/research_chd-1.jpg";
 import research_molecular_mr from "../../../assets/images/research_molecular_mr-1_tn.jpg";
