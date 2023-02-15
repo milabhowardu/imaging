@@ -71,9 +71,8 @@ function App() {
         },
       ],
       references: [
-        `Agaronyan A, Syed R, Kim R, Hsu CH, Love SA, Hooker JM, Reid AE, Wang PC, Ishibashi N, Kang Y, Tu TW. A Baboon Brain Atlas for Magnetic Resonance`,
-        `Imaging and Positron Emission Tomography Image Analysis.
-      Front Neuroanat. 2022 Jan 14;15:778769. doi: 10.3389/fnana.2021.778769. PMID: 35095430; PMCID: PMC8795914.`,
+        `Agaronyan A, Syed R, Kim R, Hsu CH, Love SA, Hooker JM, Reid AE, Wang PC, Ishibashi N, Kang Y, Tu TW. A Baboon Brain Atlas for Magnetic Resonance, Imaging and Positron Emission Tomography Image Analysis.
+      Front Neuroanat. 2022 Jan 14;15:778769. doi: 10.3389/fnana.2021.778769. <a href='https://pubmed.ncbi.nlm.nih.gov/35095430/'/>PMID: 35095430</a>; <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8795914/'/>PMCID: PMC8795914</a>.`,
       ],
     },
     {
@@ -91,9 +90,9 @@ function App() {
         },
       ],
       references: [
-        `Tu TW, Williams RA, Lescher JD, Jikaria N, Turtzo LC, Frank JA. Radiological-pathological correlation of diffusion tensor and magnetization transfer imaging in a closed head traumatic brain injury model. Ann Neurol. 2016 Jun;79(6):907-20. doi: 10.1002/ana.24641. Epub 2016 Apr 18. PMID 27230970`,
-        `Tu TW, Ibrahim W, Jikaria N, Munasinghe J, Witko, Hammoud D, Frank JA, On the detection of cerebral metabolic depression in experimental traumatic brain injury using Chemical Exchange Saturation Transfer (CEST)-weighted MRI., Scientific Reports, 2018 Jan; 8:669. PMID 29330386 PMC5766554`,
-        `Tu TW, Lescher JD, Williams RA, Jikaria N, Turtzo LC, Frank JA, Abnormal injury response in spontaneous mild ventriculomegaly Wistar rat brains: a diffusion tensor and magnetization transfer imaging study, Journal of Neurotrauma, 2017 Jan 1;34(1):248-256. PMID 26905805 PMC5198143`,
+        `Tu TW, Williams RA, Lescher JD, Jikaria N, Turtzo LC, Frank JA. Radiological-pathological correlation of diffusion tensor and magnetization transfer imaging in a closed head traumatic brain injury model. Ann Neurol. 2016 Jun;79(6):907-20. doi: 10.1002/ana.24641. Epub 2016 Apr 18. <a href="https://pubmed.ncbi.nlm.nih.gov/27230970/">PMID 27230970</a>`,
+        `Tu TW, Ibrahim W, Jikaria N, Munasinghe J, Witko, Hammoud D, Frank JA, On the detection of cerebral metabolic depression in experimental traumatic brain injury using Chemical Exchange Saturation Transfer (CEST)-weighted MRI., Scientific Reports, 2018 Jan; 8:669. <a href='https://pubmed.ncbi.nlm.nih.gov/29330386/'>PMID: 29330386</a> <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5766554/'>PMC5766554</a>`,
+        `Tu TW, Lescher JD, Williams RA, Jikaria N, Turtzo LC, Frank JA, Abnormal injury response in spontaneous mild ventriculomegaly Wistar rat brains: a diffusion tensor and magnetization transfer imaging study, Journal of Neurotrauma, 2017 Jan 1;34(1):248-256. <a href='https://pubmed.ncbi.nlm.nih.gov/26905805/'>PMID 26905805</a> <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5198143/'>PMC5198143</a>`,
       ],
     },
     {
@@ -111,7 +110,7 @@ function App() {
         },
       ],
       references: [
-        `Stinnett GR, Lin S, Korotcov AV, Korotcova L, Morton PD, Ramachandra SD, Pham A, Kumar S, Agematsu K, Zurakowski D, Wang PC, Jonas RA, Ishibashi N. Microstructural Alterations and Oligodendrocyte Dysmaturation in White Matter After Cardiopulmonary Bypass in a Juvenile Porcine Model. J Am Heart Assoc. 2017 Aug 15;6(8):e005997.doi: 10.1161/JAHA.117.005997. PMID 28862938 PMC5586442`,
+        `Stinnett GR, Lin S, Korotcov AV, Korotcova L, Morton PD, Ramachandra SD, Pham A, Kumar S, Agematsu K, Zurakowski D, Wang PC, Jonas RA, Ishibashi N. Microstructural Alterations and Oligodendrocyte Dysmaturation in White Matter After Cardiopulmonary Bypass in a Juvenile Porcine Model. J Am Heart Assoc. 2017 Aug 15;6(8):e005997.doi: 10.1161/JAHA.117.005997. <a href='https://pubmed.ncbi.nlm.nih.gov/28862938/'>PMID 28862938</a> <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5586442/'/>PMC5586442</a>`,
       ],
     },
     {
@@ -133,8 +132,8 @@ function App() {
         },
       ],
       references: [
-        `Meng J, Liu YY, Gao SY, Lin S, Gu XB, Pomper MG, Wang PC, Shan L. A Bivalent Recombinant Immunotoxin with High Potency against Tumors with EGFR and EGFRvIII Expression. Cancer Biol Ther. Oct 2015. PMID 26467217 PMC4847807`,
-        `Hsu CH, Lin S, Ho AC, Johnson TD, Wang PC, Scafidi J, Tu TW. Comparison of in vivo and in situ detection of hippocampal metabolites in mouse brain using 1H-MRS. NMR Biomed. 2020 Nov 30:e4451. doi: 10.1002/nbm.4451. Epub ahead of print. PMID: 33258202 PMID 33258202`,
+        `Meng J, Liu YY, Gao SY, Lin S, Gu XB, Pomper MG, Wang PC, Shan L. A Bivalent Recombinant Immunotoxin with High Potency against Tumors with EGFR and EGFRvIII Expression. Cancer Biol Ther. Oct 2015. <a href='https://pubmed.ncbi.nlm.nih.gov/27230970/'>PMID 26467217</a> <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4847807/'>PMC4847807</a>`,
+        `Hsu CH, Lin S, Ho AC, Johnson TD, Wang PC, Scafidi J, Tu TW. Comparison of in vivo and in situ detection of hippocampal metabolites in mouse brain using 1H-MRS. NMR Biomed. 2020 Nov 30:e4451. doi: 10.1002/nbm.4451. Epub ahead of print. PMID: 33258202 <a href='https://pubmed.ncbi.nlm.nih.gov/33258202/'>PMID 33258202</a>`,
       ],
     },
   ];
