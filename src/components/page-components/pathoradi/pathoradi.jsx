@@ -12,7 +12,7 @@ import background from "../../../assets/images/HomePage.jpg";
 const PathoRadi = () => {
   return (
     <>
-      <Hero title="Visualization for IHC" subtitle=" Upload raw image to get result --->" register="Register" />
+      <Hero title="Visualization for IHC" subtitle=" Upload raw image to get result. " register="Register" />
       <div className={classes.wrapper}>
         <div className={classes.navPath}> 
           HOME » <strong>PathoRadi</strong>
