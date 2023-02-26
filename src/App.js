@@ -50,6 +50,7 @@ import optical_sample_2 from "./assets/images/imaging-home-Optical-Cancer.jpg";
 import optical_sample_3 from "./assets/images/imaging-facilities-optical-highthroughput-1536x627.jpg";
 
 import facility_pet_1 from "./assets/images/imaging-facilities-BrukerPET.jpg";
+import PathoRadi from "./components/page-components/pathoradi/pathoradi";
 
 function App() {
   const reaserchHighlightsList = [
@@ -336,6 +337,8 @@ function App() {
           <Route exact path="/positions" element={<Positions />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+
+          <Route exact path="/pathoradi" element={<PathoRadi />} />
         </Routes>
       </Router>
       <Footer />
