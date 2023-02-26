@@ -17,7 +17,7 @@ const Ihc = () => {
       />
       <div className={classes.wrapper}>
         <div className={classes.navPath}>
-          HOME » PathRadi »<strong>IHC</strong>
+          HOME » PathRadi » <strong>IHC</strong>
         </div>
         {/* <SearchBox /> */}
 
