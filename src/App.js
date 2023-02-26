@@ -51,6 +51,7 @@ import optical_sample_3 from "./assets/images/imaging-facilities-optical-highthr
 
 import facility_pet_1 from "./assets/images/imaging-facilities-BrukerPET.jpg";
 import PathoRadi from "./components/page-components/pathoradi/pathoradi";
+import Ihc from "./components/page-components/pathoradi/ihc/ihc";
 
 function App() {
   const reaserchHighlightsList = [
@@ -339,6 +340,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
 
           <Route exact path="/pathoradi" element={<PathoRadi />} />
+          <Route exact path="/pathoradi/ihc" element={<Ihc />} />
         </Routes>
       </Router>
       <Footer />

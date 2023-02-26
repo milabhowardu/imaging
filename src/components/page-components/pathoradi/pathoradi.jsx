@@ -6,8 +6,10 @@ import { GiBrain } from "react-icons/gi";
 import { FcPieChart } from "react-icons/fc";
 import { AiFillCode } from "react-icons/ai";
 import { MdWeb } from "react-icons/md";
+import { HiArrowRight } from "react-icons/hi";
 
 import background from "../../../assets/images/HomePage.jpg";
+import SearchBox from "./searchBox/search-box.component";
 
 const PathoRadi = () => {
   return (
@@ -21,16 +23,22 @@ const PathoRadi = () => {
         {/* <div className={classes.navPath}> 
           HOME » <strong>PathoRadi</strong>
         </div> */}
-        <div className={classes.searchHead}>Starting to search at PathoRadi.</div>
-        <div className={classes.inputGroup}>
-          <input type="text" className={classes.input} placeholder="Enter name here..." />
-          {/* <button class="btn btn--primary">Search</button> */}
-        </div>
-
+        <SearchBox />
         <div className={classes.blockHeader}>
           <div>
             <GiBrain size={25} /> PathoRadi
           </div>
+          <div className={classes.more}>
+              <a href="/pathoradi/ihc">
+                <div className={classes.flex}>
+                  IHC
+                  <div className={classes.narrow}>
+                    <HiArrowRight size={18} />
+                  </div>
+                </div>
+              </a>
+            </div>
+          {/* <div><a href="./pathoradi/ihc"> IHC </a></div> */}
         </div>
 
         <div className={classes.content}>

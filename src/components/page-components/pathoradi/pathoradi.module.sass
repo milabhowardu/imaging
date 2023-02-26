@@ -10,35 +10,15 @@
     color: #635c81
     margin-bottom: 50px
 
-@mixin searchHead()
-    text-align: center
-    padding-top: 6rem
-    margin-bottom: 2    rem
-    color: #1b0760
-    font-size: 2rem
-    font-weight: 700
-    font-family: Inter, Arial, Helvetica, sans-serif
-
-@mixin inputGroup()
-    box-shadow: 0 0 30px 20px #e6ebee
-    border: 0
-    margin: 1.5rem auto 5rem auto
-    max-width: 60rem
-    display: flex
-    border-radius: 30px
-    box-shadow: 0 0 30px 20px #e6ebee
-    outline: 0
-    & > .input
-        border: 0
-        border-radius: 40px
-        flex-grow: 1
-        padding: 1.5rem 2rem
-        width: 0
 
 @mixin content()
     padding: 20px 20px
 
 @mixin  blockHeader()
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // padding-right: 30px
     font-size: 1.4rem
     font-weight: 700
     margin-bottom: 20px
@@ -50,6 +30,33 @@
         align-items: center
         & > svg
             margin-right: 10px
+    & > .more
+        background: rgba(0, 0, 0, 0.2)
+        height: 100%
+        font-size: 1.2rem
+        &:hover
+            & > a 
+                text-decoration: underline
+            .narrow
+                background-color: rgb(244, 204, 4)
+        .flex
+            display: flex
+            justify-content: center
+            align-items: flex-end
+        .narrow
+            margin-left: 10px
+            border-radius: 50%
+            width: 25px
+            height: 25px
+            color: #000
+            background: #fff
+            display: flex
+            justify-content: center
+            align-items: center
+    @media screen and (max-width: 690px)
+        flex-direction: column
+        & > .more
+            justify-content: flex-start
 
 @mixin feture()
     display: flex
@@ -104,10 +111,6 @@
     @include wrapper()
     .navPath
         @include navPath()
-    .searchHead
-        @include searchHead
-    .inputGroup
-        @include inputGroup()
     .blockHeader
         @include blockHeader()
     .content
