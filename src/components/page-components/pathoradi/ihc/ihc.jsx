@@ -11,7 +11,7 @@ const Ihc = () => {
   return (
     <>
       <Hero
-        title="Visualization for IHC"
+        title="Visualization for IHC/MRI"
         subtitle=" Upload raw image to get result. "
         register="Register"
       />

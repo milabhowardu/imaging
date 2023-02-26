@@ -15,7 +15,7 @@ const PathoRadi = () => {
   return (
     <>
       <Hero
-        title="Visualization for IHC"
+        title="Visualization for IHC/MRI"
         subtitle=" Upload raw image to get result. "
         register="Register"
       />
@@ -41,6 +41,9 @@ const PathoRadi = () => {
           {/* <div><a href="./pathoradi/ihc"> IHC </a></div> */}
         </div>
 
+        {/* <div className={classes.content}>
+            An interactive web server for AI-assisted radiologic-pathologic image analysis, correlation and visualization
+        </div> */}
         <div className={classes.content}>
           Radiological imaging is a critical part of healthcare services which
           physicians rely heavily upon in the medical decision-making process. A
@@ -74,7 +77,7 @@ const PathoRadi = () => {
           <div className={classes.feture}>
             <div>
               <div className={classes.icon}>
-                <AiFillCode size={80} color={"rgb(0 103 176)"} />
+                <AiFillCode size={90} color={"rgb(0 103 176)"} />
               </div>
               <div>
                 Deep learning algorithms for quantifying cell morphological
@@ -83,7 +86,7 @@ const PathoRadi = () => {
             </div>
             <div>
               <div className={classes.icon}>
-                <FcPieChart size={80} color={"rgb(0 103 176)"} />
+                <FcPieChart size={90} color={"rgb(0 103 176)"} />
               </div>
               <div>
                 A graphical and interactive statistic toolbox to visualize the
@@ -92,7 +95,7 @@ const PathoRadi = () => {
             </div>
             <div>
               <div className={classes.icon}>
-                <MdWeb size={80} color={"rgb(0 103 176)"} />
+                <MdWeb size={90} color={"rgb(0 103 176)"} />
               </div>
               <div>
                 A website-as-a-service software package that implements
