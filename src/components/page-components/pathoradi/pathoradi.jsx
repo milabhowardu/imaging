@@ -12,11 +12,21 @@ import background from "../../../assets/images/HomePage.jpg";
 const PathoRadi = () => {
   return (
     <>
-      <Hero title="Visualization for IHC" subtitle=" Upload raw image to get result. " register="Register" />
+      <Hero
+        title="Visualization for IHC"
+        subtitle=" Upload raw image to get result. "
+        register="Register"
+      />
       <div className={classes.wrapper}>
-        <div className={classes.navPath}> 
+        {/* <div className={classes.navPath}> 
           HOME » <strong>PathoRadi</strong>
+        </div> */}
+        <div className={classes.searchHead}>Starting to search at PathoRadi.</div>
+        <div className={classes.inputGroup}>
+          <input type="text" className={classes.input} placeholder="Enter name here..." />
+          {/* <button class="btn btn--primary">Search</button> */}
         </div>
+
         <div className={classes.blockHeader}>
           <div>
             <GiBrain size={25} /> PathoRadi
@@ -94,14 +104,10 @@ const PathoRadi = () => {
           artificial intelligence in the field of bioimaging research.
         </div>
         <div className={classes.registerSection}>
-            <div>
-                Ready to Get Started?
-            </div>
-            <a className={classes.register}>Register</a>
-           
+          <div>Ready to Get Started?</div>
+          <a className={classes.register}>Register</a>
         </div>
       </div>
-      
     </>
   );
 };
