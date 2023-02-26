@@ -1,7 +1,8 @@
 import React from "react";
 import classes from "./hero.module.sass";
 
-const Hero = ({background, title}) => {
+
+const Hero = ({background, title, subtitle, register}) => {
   return (
     <div className={classes.wrapper}>
       <ol>
@@ -9,6 +10,7 @@ const Hero = ({background, title}) => {
           <div className={classes.compartment}>
             <div className={classes.heroContent}>
               <h2>{title}</h2>
+              {subtitle && <h3> {subtitle} <a className={classes.register}>{register}</a></h3>}
             </div>
           </div>
         </li>

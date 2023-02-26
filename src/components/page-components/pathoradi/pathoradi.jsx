@@ -7,14 +7,14 @@ import { FcPieChart } from "react-icons/fc";
 import { AiFillCode } from "react-icons/ai";
 import { MdWeb } from "react-icons/md";
 
-import background from "../../../assets/images/Facilities.jpg";
+import background from "../../../assets/images/HomePage.jpg";
 
 const PathoRadi = () => {
   return (
     <>
-      {/* <Hero title="Visualization for IHC" /> */}
+      <Hero title="Visualization for IHC" subtitle=" Upload raw image to get result --->" register="Register" />
       <div className={classes.wrapper}>
-        <div className={classes.navPath}>
+        <div className={classes.navPath}> 
           HOME » <strong>PathoRadi</strong>
         </div>
         <div className={classes.blockHeader}>
