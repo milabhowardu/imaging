@@ -19,7 +19,7 @@ const PathoRadi = () => {
         </div>
         <div className={classes.blockHeader}>
           <div>
-            <GiBrain size={25} /> PathoRadi:
+            <GiBrain size={25} /> PathoRadi
           </div>
         </div>
 
