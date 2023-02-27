@@ -1,5 +1,6 @@
 @mixin wrapper()
     max-width: 70rem
+    min-height: 30rem
     margin-right: auto
     margin-left: auto
     margin-bottom: 50px
@@ -22,9 +23,17 @@
         & > svg
             margin-right: 10px
 
+@mixin ihcCanvas()
+    height: 500px
+    width: 67.5rem
+    background-color: #fff
+    border: 1px solid #000
+
 .wrapper
     @include wrapper()
     .navPath
         @include navPath()
     .blockHeader
         @include blockHeader()
+    .ihcCanvas
+        @include ihcCanvas()
