@@ -37,7 +37,7 @@ export default function useZoomableSVG(ref) {
           [0, 0],
           [dimensions.width, dimensions.height],
         ])
-        .scaleExtent([0.5, 8])
+        .scaleExtent([0.5, 20])
         .on("zoom", zoomed)
     );
 
