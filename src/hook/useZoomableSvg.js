@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ResizeObserver from "resize-observer-polyfill";
 
-import * as d3 from "d3";
+import {select, zoomTransform, zoom} from "d3";
 import { event } from "d3-selection";
 
 import CR1_slide_2_Mmap from "../assets/CR1/CR1_slide_2_Mmap.jpg";
@@ -24,7 +24,7 @@ export default function useZoomableSVG(ref) {
   }, [ref]);
 
   useEffect(() => {
-    const svg = d3.select(ref.current);
+    const svg = select(ref.current);
     const g = svg.select("g");
 
     g.append("image")
@@ -33,8 +33,7 @@ export default function useZoomableSVG(ref) {
       .attr("height", 500);
 
     svg.call(
-      d3
-        .zoom()
+        zoom()
         .extent([
           [0, 0],
           [dimensions.width, dimensions.height],
@@ -46,7 +45,7 @@ export default function useZoomableSVG(ref) {
     svg.attr("width", dimensions.width).attr("height", dimensions.height);
 
     function zoomed() {
-      g.attr("transform", d3.zoomTransform(this));
+      g.attr("transform", zoomTransform(this));
     }
   }, [dimensions]);
 
