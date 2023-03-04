@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import ResizeObserver from "resize-observer-polyfill";
 
 import {select, zoomTransform, zoom} from "d3";
-import { event } from "d3-selection";
 
 import CR1_slide_2_Mmap from "../assets/CR1/CR1_slide_2_Mmap.jpg";
 

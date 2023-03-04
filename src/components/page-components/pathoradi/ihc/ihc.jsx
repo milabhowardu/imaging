@@ -6,7 +6,6 @@ import useZoomableSVG from "../../../../hook/useZoomableSvg";
 
 import { FaBrain } from "react-icons/fa";
 
-import * as d3 from "d3";
 import CR1_slide_2_Mmap from "../../../../assets/CR1/CR1_slide_2_Mmap.jpg";
 
 const Ihc = () => {
@@ -42,14 +41,11 @@ const Ihc = () => {
             <FaBrain size={25} /> IHC
           </div>
         </div>
-        <div className={classes.ihcCanvas}
-        >
+        <div className={classes.ihcCanvas}>
           <svg ref={svgRef} style={{ width: "100%", height: "100%" }}>
             <g>
-            <img className={classes.ihcCanvas} src={CR1_slide_2_Mmap} />
-
+              <img className={classes.ihcCanvas} src={CR1_slide_2_Mmap} />
             </g>
-         
           </svg>
         </div>
       </div>
