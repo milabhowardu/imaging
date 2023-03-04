@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ResizeObserver from "resize-observer-polyfill";
 
-import * as d3 from "d3";
+// import * as d3 from "d3";
 
 import CR1_slide_2_Mmap from "../assets/CR1/CR1_slide_2_Mmap.jpg";
 
