@@ -12,7 +12,7 @@ const Upload = ( ) => {
     <>
       <div className={classes.wrapper}>
         <div className={classes.navPath}>
-          HOME » <a href="./pathoradi">PathRadi</a> » <strong>upload</strong>
+          HOME » <a href="/pathoradi">PathRadi</a> » <strong>upload</strong>
         </div>
         <div className={classes.blockHeader}>
           <div>
