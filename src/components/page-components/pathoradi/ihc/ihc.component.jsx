@@ -34,7 +34,7 @@ const Ihc = () => {
     <>
       <div className={classes.wrapper}>
         <div className={classes.navPath}>
-          HOME » <a href="/pathoradi">PathRadi</a> » <strong>IHC</strong>
+          HOME » <a href="./pathoradi">PathRadi</a> » <strong>IHC</strong>
         </div>
         <div className={classes.blockHeader}>
           <div>

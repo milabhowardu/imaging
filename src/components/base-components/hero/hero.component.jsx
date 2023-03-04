@@ -10,7 +10,7 @@ const Hero = ({background, title, subtitle, register}) => {
           <div className={classes.compartment}>
             <div className={classes.heroContent}>
               <h2>{title}</h2>
-              {subtitle && <h3> {subtitle} <a className={classes.register}>{register}</a></h3>}
+              {subtitle && <h3> {subtitle} <a href='./upload' className={classes.register}>{register}</a></h3>}
             </div>
           </div>
         </li>
