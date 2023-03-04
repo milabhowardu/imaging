@@ -1,29 +1,35 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import classes from "./ihc.module.sass";
+import ResizeObserver from "resize-observer-polyfill";
 
-import Hero from "../../../base-components/hero/hero.component";
+import useZoomableSVG from "../../../../hook/useZoomableSvg";
+
 import { FaBrain } from "react-icons/fa";
-import background from "../../../../assets/images/Facilities.jpg";
-import SearchBox from "../searchBox/search-box.component";
 
-// import { select } from "d3";
-
-const data = [25, 30, 45, 60, 20];
+import * as d3 from "d3";
+import CR1_slide_2_Mmap from "../../../../assets/CR1/CR1_slide_2_Mmap.jpg";
 
 const Ihc = () => {
   const svgRef = useRef();
-  
-//   useEffect(()=>{
-//     console.log(svgRef);
-//     const svg = select(svgRef.current);
-//     svg.selectAll(("circle")
-//         .data(data)
-//         .join(
-//             enter => enter.append("circle"),
-//             update => update.att("class", "updated"),
-//             exit => exit.remove()
-//         ));
-//   }, []);
+  const dimensions = useZoomableSVG(svgRef);
+
+  // useEffect(() => {
+  //   const svg = d3.select(svgRef.current);
+  //   svg
+  //     .append("image")
+  //     .attr("xlink:href", CR1_slide_2_Mmap)
+  //     .attr("width", 1122)
+  //     .attr("height", 500);
+
+  // }, []);
+
+  // const zoomIn = () =>{
+  //   const svg = d3.select(svgRef.current);
+  //   svg
+  //   .call(d3.zoom().on("zoom", function () {
+  //       svg.attr("transform", d3.ZoomTransform())
+  //    }))
+  // }
 
   return (
     <>
@@ -31,15 +37,21 @@ const Ihc = () => {
         <div className={classes.navPath}>
           HOME » <a href="/pathoradi">PathRadi</a> » <strong>IHC</strong>
         </div>
-        {/* <SearchBox /> */}
         <div className={classes.blockHeader}>
           <div>
             <FaBrain size={25} /> IHC
           </div>
         </div>
+        <div className={classes.ihcCanvas}
+        >
+          <svg ref={svgRef} style={{ width: "100%", height: "100%" }}>
+            <g>
+            <img className={classes.ihcCanvas} src={CR1_slide_2_Mmap} />
 
-        <svg className={classes.ihcCanvas} ref={svgRef}></svg>
-
+            </g>
+         
+          </svg>
+        </div>
       </div>
     </>
   );
