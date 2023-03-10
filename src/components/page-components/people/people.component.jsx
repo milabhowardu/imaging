@@ -59,7 +59,7 @@ const People = () => {
       image: artur ,
       name: "Artur Agaronyan, BS",
       title: "PhD Student",
-      phone: "(202) 865-3741",
+      phone: "(202) 865-7938",
       email: "agaronyan@cua.edu",
       moreInfo: "/imaging-people-aagaronyan",
     },
