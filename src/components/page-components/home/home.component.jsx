@@ -21,13 +21,13 @@ const Home = () => {
     <>
       <Hero
         background={background}
-        title="Howard University Imaging Core Facility"
+        title="Howard University Molecular Imaging Laboratory"
       />
       <div className={classes.wrapper}>
         {/* <div className={classes.navPath}>
           HOME » <strong>ABOUT US</strong>
         </div> */}
-        <div className={classes.homeHeader}>Molecular Imaging Lab</div>
+        <div className={classes.homeHeader}>Howard University Imaging Core</div>
         <div className={classes.homeBlurb}>
           The Howard University Biomedical Imaging Core uses scientific
           expertise and state-of-the-art laboratories equipped with the
