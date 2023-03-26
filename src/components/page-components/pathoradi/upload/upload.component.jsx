@@ -60,7 +60,7 @@ const Upload = () => {
             </div>
 
             <div className={classes.submitField}>
-                <input type="submit" name="submit" value="UPLOAD"  />
+                <input type="submit" name="submit" value="SUBMIT"  />
                 <input type="submit" name="submit" value="CLEAR" />
             </div>
           </form>
