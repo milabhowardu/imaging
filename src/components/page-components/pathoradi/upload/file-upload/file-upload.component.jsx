@@ -78,8 +78,9 @@ const FileUpload = ({
         </section>
 
         {/*second part starts here*/}
+        <span>To Upload</span>
         <article>
-          <span>To Upload</span>
+          
           <section className={classes.toUploadSection}>
             {Object.keys(files).map((fileName, index) => {
               let file = files[fileName];
