@@ -14,6 +14,7 @@ const Upload = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     //logic to create new user...
+    console.log(profileImages)
   };
 
   return (
