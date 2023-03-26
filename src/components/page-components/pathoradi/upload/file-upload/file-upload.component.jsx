@@ -2,9 +2,11 @@ import React, { useRef, useState } from "react";
 import classes from "./file-upload.module.sass";
 
 import { FaCloudUploadAlt } from "react-icons/fa";
+import { RiDeleteBin5Line } from "react-icons/ri";
+
 
 const KILO_BYTES_PER_BYTE = 1000;
-const DEFAULT_MAX_FILE_SIZE_IN_BYTES = 500000;
+const DEFAULT_MAX_FILE_SIZE_IN_BYTES = 2000000;
 
 const convertNestedObjectToArray = (nestedObj) =>
   Object.keys(nestedObj).map((key) => nestedObj[key]);
@@ -68,6 +70,7 @@ const FileUpload = ({
           <input
             type="file"
             ref={fileInputField}
+            onChange={handleNewFileUpload}
             title=""
             value=""
             {...otherProps}
@@ -77,7 +80,7 @@ const FileUpload = ({
         {/*second part starts here*/}
         <article>
           <span>To Upload</span>
-          <section>
+          <section className={classes.toUploadSection}>
             {Object.keys(files).map((fileName, index) => {
               let file = files[fileName];
               let isImageFile = file.type.split("/")[0] === "image";
@@ -94,7 +97,10 @@ const FileUpload = ({
                       <span>{file.name}</span>
                       <aside>
                         <span>{convertBytesToKB(file.size)} kb</span>
-                        <i className="fas fa-trash-alt" />
+                        {/* <i className="fas fa-trash-alt" /> */}
+                        <RiDeleteBin5Line 
+                          size={25} 
+                          onClick={() => removeFile(fileName)}/>
                       </aside>
                     </div>
                   </div>
