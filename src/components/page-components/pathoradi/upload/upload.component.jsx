@@ -24,18 +24,18 @@ const Upload = () => {
         </div>
         <div className={classes.blockHeader}>
           <div>
-            {/* <FaCloudUploadAlt size={25} />  */}
+            <FaCloudUploadAlt size={25} /> Upload Raw Image(s)
           </div>
         </div>
         <div className={classes.upload}>
           <form onSubmit={handleSubmit}>
 
             <div className={classes.field}>
-              <label for="name"> UserName</label>
+              <label for="name"> User Name</label>
               <input type="text" id="name" />
             </div>
             <div className={classes.field}>
-              <label for="project"> Project name</label>
+              <label for="project"> Project Name</label>
               <input type="text" id="project" />
             </div>
             <div className={classes.field}>
@@ -50,19 +50,14 @@ const Upload = () => {
               <label for="sample"> Sample ID(optional)</label>
               <input type="text" id="sample" />
             </div>
-
-            <FileUpload
-              accept=".jpg,.png,.jpeg"
-              label="Upload raw image to get result"
-              multiple
-              updateFilesCb={updateUploadedFiles}
-            />
-
-            {/* <div>
-              <button type="submit">
-                <MdCloudUpload size={25} /> UPLOAD
-              </button>
-            </div> */}
+            <div className={classes.field}>
+              <FileUpload
+                accept=".jpg,.png,.jpeg"
+                label="Upload raw image to get result"
+                multiple
+                updateFilesCb={updateUploadedFiles}
+              />
+            </div>
 
             <div className={classes.submitField}>
                 <input type="submit" name="submit" value="UPLOAD"  />
