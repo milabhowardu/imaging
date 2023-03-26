@@ -32,23 +32,23 @@ const Upload = () => {
           <form onSubmit={handleSubmit}>
 
             <div className={classes.field}>
-              <label for="name"> User Name</label>
+              <label htmlFor="name"> User Name</label>
               <input type="text" id="name" />
             </div>
             <div className={classes.field}>
-              <label for="project"> Project Name</label>
+              <label htmlFor="project"> Project Name</label>
               <input type="text" id="project" />
             </div>
             <div className={classes.field}>
-              <label for="pixel"> Pixel resolution of the slides</label>
+              <label htmlFor="pixel"> Pixel resolution of the slides</label>
               <input type="text" id="pixel" />
             </div>
             <div className={classes.field}>
-              <label for="thickness">  Slide thickness</label>
+              <label htmlFor="thickness">  Slide thickness</label>
               <input type="text" id="thickness" />
             </div>
             <div className={classes.field}>
-              <label for="sample"> Sample ID(optional)</label>
+              <label htmlFor="sample"> Sample ID(optional)</label>
               <input type="text" id="sample" />
             </div>
             <div className={classes.field}>
