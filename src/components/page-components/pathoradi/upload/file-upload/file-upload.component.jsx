@@ -40,6 +40,7 @@ const FileUpload = ({
 
   const callUpdateFilesCb = (files) => {
     const filesAsArray = convertNestedObjectToArray(files);
+    // console.log(filesAsArray)
     updateFilesCb(filesAsArray);
   };
 
@@ -94,7 +95,7 @@ const FileUpload = ({
                         alt={`file preview ${index}`}
                       />
                     )}
-                    <div isImageFile={isImageFile}>
+                    <div>
                       <span>{file.name}</span>
                       <aside>
                         <span>{convertBytesToKB(file.size)} kb</span>

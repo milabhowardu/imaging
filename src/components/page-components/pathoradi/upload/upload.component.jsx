@@ -8,13 +8,19 @@ import FileUpload from "./file-upload/file-upload.component";
 
 const Upload = () => {
 
-  const updateUploadedFiles = (files) =>
-    setNewUserInfo({ ...newUserInfo, profileImages: files });
+  const [newUserInfo, setNewUserInfo] = useState({
+    profileImages: []
+  });
 
+  const updateUploadedFiles = (files) =>{
+    setNewUserInfo({ ...newUserInfo, profileImages: files });
+    console.log(newUserInfo.profileImages)
+
+  }
+    
   const handleSubmit = (event) => {
     event.preventDefault();
-    //logic to create new user...
-    console.log(profileImages)
+    console.log(newUserInfo.profileImages)
   };
 
   return (
@@ -30,7 +36,6 @@ const Upload = () => {
         </div>
         <div className={classes.upload}>
           <form onSubmit={handleSubmit}>
-
             <div className={classes.field}>
               <label htmlFor="name"> User Name</label>
               <input type="text" id="name" />
@@ -40,12 +45,12 @@ const Upload = () => {
               <input type="text" id="project" />
             </div>
             <div className={classes.field}>
-              <label htmlFor="pixel"> Pixel resolution of the slides</label>
-              <input type="text" id="pixel" />
-            </div>
-            <div className={classes.field}>
               <label htmlFor="thickness">  Slide thickness</label>
               <input type="text" id="thickness" />
+            </div>
+            <div className={classes.field}>
+              <label htmlFor="pixel"> Pixel resolution of the slides</label>
+              <input type="text" id="pixel" />
             </div>
             <div className={classes.field}>
               <label htmlFor="sample"> Sample ID(optional)</label>
