@@ -265,8 +265,6 @@ function App() {
     },
   };
 
-  console.log(facilitiesList);
-
   return (
     <>
       <NavBar />

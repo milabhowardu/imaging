@@ -6,7 +6,7 @@ import { FaCloudUploadAlt } from "react-icons/fa";
 import { MdCloudUpload } from "react-icons/md";
 import FileUpload from "./file-upload/file-upload.component";
 
-import axios from 'axios';
+import Axios from 'axios';
 
 import { send } from "emailjs-com";
 
@@ -36,7 +36,9 @@ const Upload = () => {
     console.log(toUpload);
 
     // need to checkout how to use Azuer node.js api
-    axios.post('http://prbase.azurewebsites.net/create', {
+    const localURL = 'http://localhost:3000/users/create';
+    const pathoradiURL = 'https://prbase.azurewebsites.net/users/create';
+    Axios.post(pathoradiURL, {
       username: toUpload.username,
       email: toUpload.email,
       project: toUpload.project,
