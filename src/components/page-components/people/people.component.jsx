@@ -12,6 +12,7 @@ import linCrop from "../../../assets/images/Lin_Crop.jpg";
 import chhsu from "../../../assets/images/CHHsu.jpg";
 import stuart from "../../../assets/images/SWashington.jpg";
 import artur from "../../../assets/images/Artur.jpg";
+import mandy from "../../../assets/images/Mandy.jpg";
 
 const People = () => {
   const peopleLIst = [
@@ -63,7 +64,16 @@ const People = () => {
       email: "agaronyan@cua.edu",
       moreInfo: "/imaging-people-aagaronyan",
     },
+    {
+      image: mandy ,
+      name: "Mandy Chang, PhD",
+      title: "Postdoctoral Fellow",
+      phone: "(202) 865-3760",
+      email: "beming.chang@howard.edu",
+      moreInfo: "",
+    },
   ];
+
   return (
     <>
       <Hero background={background} title="" />
