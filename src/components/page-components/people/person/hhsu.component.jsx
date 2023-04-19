@@ -8,7 +8,7 @@ const Hhsu = () => {
   const person = {
     image: chhsu ,
     name: "Chao-Hsiung Hsu, PhD",
-    title: "Postdoctoral Fellow",
+    title: "Senior Scientist",
     phone: "(202) 865-7938",
     email: "chaohsiung.hsu@howard.edu",
     biography: `

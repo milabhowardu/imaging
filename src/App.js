@@ -53,6 +53,7 @@ import facility_pet_1 from "./assets/images/imaging-facilities-BrukerPET.jpg";
 import PathoRadi from "./components/page-components/pathoradi/pathoradi";
 import Ihc from "./components/page-components/pathoradi/ihc/ihc.component";
 import Upload from "./components/page-components/pathoradi/upload/upload.component";
+import Mandy from "./components/page-components/people/person/mandy.component";
 
 
 function App() {
@@ -302,18 +303,23 @@ function App() {
           />
 
           <Route exact path="/people" element={<People />} />
-          <Route exact path="/imaging-people-pwang" element={<Pwang />} />
-          <Route exact path="/imaging-people-wtu" element={<Wtu />} />
-          <Route exact path="/imaging-people-slin" element={<Slin />} />
-          <Route exact path="/imaging-people-chhsu" element={<Hhsu />} />
+          <Route exact path="/people/pwang" element={<Pwang />} />
+          <Route exact path="/people/wtu" element={<Wtu />} />
+          <Route exact path="/people/slin" element={<Slin />} />
+          <Route exact path="/people/chhsu" element={<Hhsu />} />
           <Route
             exact
-            path="/imaging-people-swashington"
+            path="/people/swashington"
             element={<Swashington />}
           />
           <Route
             exact
-            path="/imaging-people-aagaronyan"
+            path="/people/mandy"
+            element={<Mandy />}
+          />
+          <Route
+            exact
+            path="/people/aagaronyan"
             element={<Aagaronyan />}
           />
 

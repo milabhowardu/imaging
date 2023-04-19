@@ -22,7 +22,7 @@ const People = () => {
       title: "Professor, Director",
       phone: "(202) 865-3711",
       email: "pwang@howard.edu",
-      moreInfo: "/imaging-people-pwang",
+      moreInfo: "/people/pwang",
     },
     {
       image: wtu ,
@@ -30,7 +30,7 @@ const People = () => {
       title: "Assistant Professor",
       phone: "(202) 865-3742",
       email: "tsangwei.tu@howard.edu",
-      moreInfo: "/imaging-people-wtu",
+      moreInfo: "/people/wtu",
     },
     {
       image: linCrop ,
@@ -38,15 +38,15 @@ const People = () => {
       title: "Lab Manager",
       phone: "(202) 865-3729",
       email: "stephen.lin@howard.edu",
-      moreInfo: "/imaging-people-slin",
+      moreInfo: "/people/slin",
     },
     {
       image: chhsu ,
       name: "Chao-Hsiung Hsu, PhD",
-      title: "Postdoctoral Fellow",
+      title: "Senior Scientist",
       phone: "(202) 865-7938",
       email: "chaohsiung.hsu@howard.edu",
-      moreInfo: "/imaging-people-chhsu",
+      moreInfo: "/people/chhsu",
     },
     {
       image: stuart ,
@@ -54,15 +54,7 @@ const People = () => {
       title: "Postdoctoral Fellow",
       phone: "(202) 865-4980",
       email: "sdw4@georgetown.edu",
-      moreInfo: "/imaging-people-swashington",
-    },
-    {
-      image: artur ,
-      name: "Artur Agaronyan, BS",
-      title: "PhD Student",
-      phone: "(202) 865-7938",
-      email: "agaronyan@cua.edu",
-      moreInfo: "/imaging-people-aagaronyan",
+      moreInfo: "/people/swashington",
     },
     {
       image: mandy ,
@@ -70,7 +62,15 @@ const People = () => {
       title: "Postdoctoral Fellow",
       phone: "(202) 865-3760",
       email: "beming.chang@howard.edu",
-      moreInfo: "",
+      moreInfo: "/people/mandy",
+    },
+    {
+      image: artur ,
+      name: "Artur Agaronyan, BS",
+      title: "PhD Student",
+      phone: "(202) 865-7938",
+      email: "agaronyan@cua.edu",
+      moreInfo: "/people/aagaronyan",
     },
   ];
 
