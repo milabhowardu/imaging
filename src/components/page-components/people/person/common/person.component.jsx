@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./person.module.sass";
 
 import { IoPersonCircleSharp } from "react-icons/io5";
+import { BsFillPersonFill } from "react-icons/bs";
 
 const Person = ({ person }) => {
   const {
@@ -27,7 +28,11 @@ const Person = ({ person }) => {
       </div>
       <div className={classes.person}>
         <div className={classes.personInfo}>
-          <img src={person.image} />
+          {person.image ? (
+            <img src={person.image} />
+          ) : (
+            <BsFillPersonFill size={225} />
+          )}
           <div>
             <div className={classes.name}>{name}</div>
 
@@ -48,16 +53,20 @@ const Person = ({ person }) => {
         </div>
         <div className={classes.publications}>
           <div className={classes.header}>Publications List</div>
-            {publicationsListLink && (
-              <div>
-                <a href={publicationsListLink} target="_blank" className={classes.link}>
-                  {person.publicationsListLink}
-                </a>
-              </div>
-            )}
-            {publicationsList && (
-              <div dangerouslySetInnerHTML={{ __html: publicationsList }}></div>
-            )}
+          {publicationsListLink && (
+            <div>
+              <a
+                href={publicationsListLink}
+                target="_blank"
+                className={classes.link}
+              >
+                {person.publicationsListLink}
+              </a>
+            </div>
+          )}
+          {publicationsList && (
+            <div dangerouslySetInnerHTML={{ __html: publicationsList }}></div>
+          )}
         </div>
         <div className={classes.contactIfon}>
           <div className={classes.header}>Contact Info</div>

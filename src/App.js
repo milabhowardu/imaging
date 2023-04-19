@@ -54,6 +54,7 @@ import PathoRadi from "./components/page-components/pathoradi/pathoradi";
 import Ihc from "./components/page-components/pathoradi/ihc/ihc.component";
 import Upload from "./components/page-components/pathoradi/upload/upload.component";
 import Mandy from "./components/page-components/people/person/mandy.component";
+import Sunny from "./components/page-components/people/person/sunny.component";
 
 
 function App() {
@@ -321,6 +322,11 @@ function App() {
             exact
             path="/people/aagaronyan"
             element={<Aagaronyan />}
+          />
+          <Route
+            exact
+            path="/people/sunny"
+            element={<Sunny />}
           />
 
           <Route exact path="/facilities" element={<Facilities />} />

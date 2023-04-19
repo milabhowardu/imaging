@@ -4,6 +4,8 @@ import Hero from "../../base-components/hero/hero.component";
 
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { HiArrowRight } from "react-icons/hi";
+import { BsFillPersonFill } from "react-icons/bs";
+
 
 import background from "../../../assets/images/People.jpg";
 import pwang from "../../../assets/images/Paul Wang photo.jpg";
@@ -72,6 +74,14 @@ const People = () => {
       email: "agaronyan@cua.edu",
       moreInfo: "/people/aagaronyan",
     },
+    {
+      image: "" ,
+      name: "Sunny Ji, B.S.",
+      title: "Research Assistant",
+      phone: "(202) 486-5681",
+      email: "Sunnyji1016@gmail.com",
+      moreInfo: "/people/sunny",
+    },
   ];
 
   return (
@@ -90,7 +100,11 @@ const People = () => {
           {peopleLIst.map((person, idx) => (
             <div className={classes.card} key={`person${idx}`}>
               <div className={classes.people}>
-                <img src={person.image} />
+                {
+                  person.image
+                    ? <img src={person.image} />
+                    : <BsFillPersonFill size={225} />
+                }
                 <div className={classes.name}>{person.name}</div>
                 <div className={classes.title}>
                   <p>{person.title} </p>
