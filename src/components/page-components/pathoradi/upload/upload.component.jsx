@@ -39,7 +39,7 @@ const Upload = () => {
     // need to checkout how to use Azuer node.js api
     const localURL = 'http://localhost:3000/uploadInfo/create';
     const pathoradiURL = 'https://prbase.azurewebsites.net/uploadInfo/create';
-    axios.post(localURL, {
+    axios.post(pathoradiURL, {
       username: toUpload.username,
       email: toUpload.email,
       project: toUpload.project,
