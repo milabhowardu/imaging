@@ -35,12 +35,11 @@ const Upload = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     // need to checkout how to use Azuer node.js api
-    const localURL = 'http://localhost:3000/uploadInfo/create';
-    
-    const pathoradiURL = 'https://prbase.azurewebsites.net/uploadInfo/create';
-    axios.post(pathoradiURL, {
+    // const localURL = 'http://localhost:3000/uploadInfo/create';
+    // const pathoradiURL = 'https://prbase.azurewebsites.net/uploadInfo/create';
+    console.log(process.env.REACT_APP_PATHO_RADI_URL)
+    axios.post(`${process.env.REACT_APP_PATHO_RADI_URL}`, {
       username: toUpload.username,
       email: toUpload.email,
       project: toUpload.project,
