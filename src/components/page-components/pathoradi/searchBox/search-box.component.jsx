@@ -11,7 +11,6 @@ const SearchBox = () => {
           className={classes.input}
           placeholder="Enter name here..."
         />
-        {/* <button class="btn btn--primary">Search</button> */}
       </div>
     </>
   );

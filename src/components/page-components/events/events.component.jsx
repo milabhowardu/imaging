@@ -3,7 +3,6 @@ import classes from "./events.module.sass";
 import Hero from "../../base-components/hero/hero.component";
 
 import { MdOutlineEventAvailable } from "react-icons/md";
-
 import background from "../../../assets/images/Events.jpg";
 
 const Events = () => {
@@ -20,9 +19,8 @@ const Events = () => {
           </div>
         </div>
         <div className={classes.events}>
-            Currently, there are no scheduled events planned.
+          Currently, there are no scheduled events planned.
         </div>
-
       </div>
     </>
   );

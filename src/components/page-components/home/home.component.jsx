@@ -14,7 +14,6 @@ import HowardRCMI from "../../../assets/images/HowardRCMI.jpg";
 import research_atlas from "../../../assets/images/imaging-research_petatlas-1.jpg";
 import research_tbi from "../../../assets/images/research_tbi-1_tn.jpg";
 import research_chd from "../../../assets/images/research_chd-1.jpg";
-import research_molecular_mr from "../../../assets/images/research_molecular_mr-1_tn.jpg";
 
 const Home = () => {
   return (
@@ -24,9 +23,6 @@ const Home = () => {
         title="Howard University Molecular Imaging Laboratory"
       />
       <div className={classes.wrapper}>
-        {/* <div className={classes.navPath}>
-          HOME » <strong>ABOUT US</strong>
-        </div> */}
         <div className={classes.homeHeader}>Howard University Imaging Core</div>
         <div className={classes.homeBlurb}>
           The Howard University Biomedical Imaging Core uses scientific
@@ -160,32 +156,60 @@ const Home = () => {
             <GoMegaphone size={28} /> Research Highlights
           </div>
         </div>
-        <div  className={classes.featuredResearch}>
+        <div className={classes.featuredResearch}>
           <div className={classes.featuredResearchHight}>
-            
-            <div className={classes.researchImg}><img src={research_atlas} /></div>
+            <div className={classes.researchImg}>
+              <img src={research_atlas} />
+            </div>
             <div>
-              <div className={classes.title}><a href="/research/petatlas">High-Throughput Image Analysis of MRI and PET Imaging</a></div>
-              <div className={classes.author}>Tsang-Wei Tu, Department of Radiology; Yeona Kang, Department of Mathematics; Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National</div>
+              <div className={classes.title}>
+                <a href="/research/petatlas">
+                  High-Throughput Image Analysis of MRI and PET Imaging
+                </a>
+              </div>
+              <div className={classes.author}>
+                Tsang-Wei Tu, Department of Radiology; Yeona Kang, Department of
+                Mathematics; Nobuyuki Ishibashi, Cardiac Surgery Research
+                Laboratory, Children's National
+              </div>
             </div>
           </div>
           <div className={classes.featuredResearchHight}>
-            <div className={classes.researchImg}><img src={research_tbi} /></div>
+            <div className={classes.researchImg}>
+              <img src={research_tbi} />
+            </div>
             <div>
-              <div  className={classes.title}><a href="/research/tbi">Imaging Tissue Damage and Metabolic Disorders in Diffuse Traumatic Brain Injury</a></div>
-              <div className={classes.author}>Tsang-Wei Tu, Department of Radiology; Joseph Frank, Radiology and Imaging Sciences, Clinical Center, National Institutes of Health</div>
+              <div className={classes.title}>
+                <a href="/research/tbi">
+                  Imaging Tissue Damage and Metabolic Disorders in Diffuse
+                  Traumatic Brain Injury
+                </a>
+              </div>
+              <div className={classes.author}>
+                Tsang-Wei Tu, Department of Radiology; Joseph Frank, Radiology
+                and Imaging Sciences, Clinical Center, National Institutes of
+                Health
+              </div>
             </div>
           </div>
           <div className={classes.featuredResearchHight}>
-            <div className={classes.researchImg}><img src={research_chd} /></div>
+            <div className={classes.researchImg}>
+              <img src={research_chd} />
+            </div>
             <div>
-              <div  className={classes.title}><a href="/research/chd">Brain Injury in Congenital Heart Disease</a></div>
-              <div className={classes.author}>Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory, Children's National</div>
+              <div className={classes.title}>
+                <a href="/research/chd">
+                  Brain Injury in Congenital Heart Disease
+                </a>
+              </div>
+              <div className={classes.author}>
+                Nobuyuki Ishibashi, Cardiac Surgery Research Laboratory,
+                Children's National
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
     </>
   );
 };

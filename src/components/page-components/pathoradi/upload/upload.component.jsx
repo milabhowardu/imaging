@@ -6,7 +6,7 @@ import { FaCloudUploadAlt } from "react-icons/fa";
 import { MdCloudUpload } from "react-icons/md";
 import FileUpload from "./file-upload/file-upload.component";
 
-import axios from 'axios';
+import axios from "axios";
 
 import { send } from "emailjs-com";
 
@@ -18,11 +18,10 @@ const Upload = () => {
     thickness: "",
     pixel: "",
     sample: "",
-    rawImages: []
+    rawImages: [],
   });
 
   const [submit, setSubmit] = useState(false);
-
 
   const updateUploadedFiles = (files) => {
     setToUpload({ ...toUpload, rawImages: files });
@@ -32,27 +31,26 @@ const Upload = () => {
     setToUpload({ ...toUpload, [e.target.name]: e.target.value });
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
     // need to checkout how to use Azuer node.js api
     // const localURL = 'http://localhost:3000/uploadInfo/create';
     // const pathoradiURL = 'https://prbase.azurewebsites.net/uploadInfo/create';
-    console.log(process.env.REACT_APP_PATHO_RADI_URL)
-    axios.post(`${process.env.REACT_APP_PATHO_RADI_URL}`, {
-      username: toUpload.username,
-      email: toUpload.email,
-      project: toUpload.project,
-      thickness: toUpload.thickness,
-      pixel: toUpload.pixel,
-      sample: toUpload.sample,
-      rawImages: ''
-    })
-    .then((res) => {
-      console.log(res.data.insertId)
-      setSubmit(true)
-    });
-
+    console.log(process.env.REACT_APP_PATHO_RADI_URL);
+    axios
+      .post(`${process.env.REACT_APP_PATHO_RADI_URL}`, {
+        username: toUpload.username,
+        email: toUpload.email,
+        project: toUpload.project,
+        thickness: toUpload.thickness,
+        pixel: toUpload.pixel,
+        sample: toUpload.sample,
+        rawImages: "",
+      })
+      .then((res) => {
+        console.log(res.data.insertId);
+        setSubmit(true);
+      });
   };
 
   return (
@@ -66,13 +64,14 @@ const Upload = () => {
             <FaCloudUploadAlt size={25} /> Upload Raw Image(s)
           </div>
         </div>
-        {
-          submit
-            ? <div> 
-               <p>Email sent with Processed ID. </p>
-                Please click the <a href="">Visualization page</a> to see the resulte.
-              </div>
-            : <div className={classes.upload}>
+        {submit ? (
+          <div>
+            <p>Email sent with Processed ID. </p>
+            Please click the <a href="">Visualization page</a> to see the
+            resulte.
+          </div>
+        ) : (
+          <div className={classes.upload}>
             <form onSubmit={handleSubmit}>
               <div className={classes.field}>
                 <label htmlFor="name"> User Name</label>
@@ -148,15 +147,14 @@ const Upload = () => {
                   updateFilesCb={updateUploadedFiles}
                 />
               </div>
-  
+
               <div className={classes.submitField}>
                 <input type="submit" name="submit" value="SUBMIT" />
                 <input type="submit" name="submit" value="CLEAR" />
               </div>
             </form>
           </div>
-        }
-        
+        )}
       </div>
     </>
   );

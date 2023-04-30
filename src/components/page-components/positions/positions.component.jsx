@@ -20,10 +20,8 @@ const Positions = () => {
           </div>
         </div>
         <div className={classes.positions}>
-            Currently, there are no scheduled events planned.
+          Currently, there are no scheduled events planned.
         </div>
-
-
       </div>
     </>
   );

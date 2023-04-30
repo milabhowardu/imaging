@@ -32,13 +32,18 @@ const Facilities = () => {
         <div className={classes.featuredInner}>
           <img src={Bruker} />
           <div>
-            <h2 >MRI and MRS</h2>
+            <h2>MRI and MRS</h2>
             The laboratory has two state-of-the-art NMR machines: A Bruker
             Avance III 7.0 Tesla (300 MHz), 21 cm horizontal bore MRI/MRS system
             and a Bruker Avance 9.4 Tesla (400 MHz), 89 mm vertical bore MRI/MRS
             system.
-            <div className={classes.viewMore}> <a href='/facility/mri'>View More <BsFillArrowRightCircleFill size={22}/></a></div>
-          </div> 
+            <div className={classes.viewMore}>
+              {" "}
+              <a href="/facility/mri">
+                View More <BsFillArrowRightCircleFill size={22} />
+              </a>
+            </div>
+          </div>
         </div>
         <div className={classes.featuredInner}>
           <div>
@@ -46,7 +51,12 @@ const Facilities = () => {
             The laboratory has a PerkinElmer IVIS Spectrum imaging system which
             has brought physics and biology together for the practice of
             real-time in vivo imaging.
-            <div className={classes.viewMore}> <a href='/facility/optical'>View More <BsFillArrowRightCircleFill size={22}/></a></div>
+            <div className={classes.viewMore}>
+              {" "}
+              <a href="/facility/optical">
+                View More <BsFillArrowRightCircleFill size={22} />
+              </a>
+            </div>
           </div>
           <img src={IVISSpectrum2} />
         </div>
@@ -56,7 +66,12 @@ const Facilities = () => {
             <h2>PET/SPECT/CT</h2>
             The laboratory has a Bruker Albira PET/SPECT/CT machine currently
             undergoing installation and testing.
-            <div className={classes.viewMore}> <a href='/facility/pet'>View More <BsFillArrowRightCircleFill size={22}/></a></div>
+            <div className={classes.viewMore}>
+              {" "}
+              <a href="/facility/pet">
+                View More <BsFillArrowRightCircleFill size={22} />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -89,59 +104,68 @@ const Facilities = () => {
 
         <div className={classes.faclities}>
           <h2>Usage Fees</h2>
-          
-            <table summary="Usage Fees" cellspacing="0" className={classes.feeTable}>
-              <tbody>
-                <tr>
-                  <th>Facility/Service</th>
-                  <th>Hourly Rate</th>
-                  <th>Daily Rate</th>
-                </tr>
-                <tr>
-                  <td>Bruker 9.4T MRI/MRS</td>
-                  <td>$250</td>
-                  <td>$1,200</td>
-                </tr>
-                <tr>
-                  <td>Bruker 7T MRI/MRS</td>
-                  <td>$250</td>
-                  <td>$1,200</td>
-                </tr>
-                <tr>
-                  <td>GE 3T Clinical MRI/MRS</td>
-                  <td>$600</td>
-                  <td>$1,500</td>
-                </tr>
-                <tr>
-                  <td>PerkinElmer IVIS Spectrum</td>
-                  <td>$150</td>
-                  <td>$600</td>
-                </tr>
-                <tr>
-                  <td>Bruker Albira PET/SPECT/CT</td>
-                  <td>$150</td>
-                  <td>$600</td>
-                </tr>
-                <tr>
-                  <td>Image Processing and Analysis</td>
-                  <td>$70</td>
-                  <td>-</td>
-                </tr>
-              </tbody>
-            </table>
-          
+
+          <table
+            summary="Usage Fees"
+            cellspacing="0"
+            className={classes.feeTable}
+          >
+            <tbody>
+              <tr>
+                <th>Facility/Service</th>
+                <th>Hourly Rate</th>
+                <th>Daily Rate</th>
+              </tr>
+              <tr>
+                <td>Bruker 9.4T MRI/MRS</td>
+                <td>$250</td>
+                <td>$1,200</td>
+              </tr>
+              <tr>
+                <td>Bruker 7T MRI/MRS</td>
+                <td>$250</td>
+                <td>$1,200</td>
+              </tr>
+              <tr>
+                <td>GE 3T Clinical MRI/MRS</td>
+                <td>$600</td>
+                <td>$1,500</td>
+              </tr>
+              <tr>
+                <td>PerkinElmer IVIS Spectrum</td>
+                <td>$150</td>
+                <td>$600</td>
+              </tr>
+              <tr>
+                <td>Bruker Albira PET/SPECT/CT</td>
+                <td>$150</td>
+                <td>$600</td>
+              </tr>
+              <tr>
+                <td>Image Processing and Analysis</td>
+                <td>$70</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div className={classes.faclities}>
           <h2>Scheduling: </h2>
           <div>
-            For new projects, please contact Dr. Paul Wang (<a href='mailto:pwang@howard.edu'>pwang@howard.edu</a>) to
-            schedule an initial meeting to discuss feasibility and project
-            timeline.
+            For new projects, please contact Dr. Paul Wang (
+            <a href="mailto:pwang@howard.edu">pwang@howard.edu</a>) to schedule
+            an initial meeting to discuss feasibility and project timeline.
           </div>
           <div>
-            For scheduling established projects: Please use <b><a href="http://secure3.ideaelan.com/Howard/Public/AppLogin.aspx">Idea Elan</a></b> or contact
-            Stephen Lin (<a href='mailto:pwang@howard.edu'>stephen.lin@howard.edu</a>)
+            For scheduling established projects: Please use{" "}
+            <b>
+              <a href="http://secure3.ideaelan.com/Howard/Public/AppLogin.aspx">
+                Idea Elan
+              </a>
+            </b>{" "}
+            or contact Stephen Lin (
+            <a href="mailto:pwang@howard.edu">stephen.lin@howard.edu</a>)
           </div>
         </div>
       </div>

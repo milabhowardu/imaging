@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import ResizeObserver from "resize-observer-polyfill";
 
-// import * as d3 from "d3";
-
 import CR1_slide_2_Mmap from "../assets/CR1/CR1_slide_2_Mmap.jpg";
 
 export default function useZoomableSVG(ref) {
@@ -32,7 +30,8 @@ export default function useZoomableSVG(ref) {
       .attr("height", 500);
 
     svg.call(
-      d3.zoom()
+      d3
+        .zoom()
         .extent([
           [0, 0],
           [dimensions.width, dimensions.height],

@@ -19,8 +19,6 @@ const Test = () => {
             <ImLab size={25} /> Test: Biomedical Imaging
           </div>
         </div>
-
-
       </div>
     </>
   );

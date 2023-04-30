@@ -7,11 +7,7 @@ import { FaInfoCircle } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { ImPhoneHangUp } from "react-icons/im";
 
-
-
-
 import background from "../../../assets/images/Direction.jpg";
-
 
 const Contact = () => {
   return (
@@ -80,7 +76,11 @@ const Contact = () => {
                 <ImPhoneHangUp size={25} /> (202) 865-3729
               </div>
               <div className={classes.infoContext}>
-                <HiOutlineMail size={25} /> <a href="mailto:stephen.lin@howard.edu"> stephen.lin@howard.edu</a>
+                <HiOutlineMail size={25} />{" "}
+                <a href="mailto:stephen.lin@howard.edu">
+                  {" "}
+                  stephen.lin@howard.edu
+                </a>
               </div>
             </div>
           </div>

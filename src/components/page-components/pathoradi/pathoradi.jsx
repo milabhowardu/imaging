@@ -29,15 +29,15 @@ const PathoRadi = () => {
             <GiBrain size={25} /> PathoRadi
           </div>
           <div className={classes.more}>
-              <a href="/pathoradi/ihc">
-                <div className={classes.flex}>
-                  IHC
-                  <div className={classes.narrow}>
-                    <HiArrowRight size={18} />
-                  </div>
+            <a href="/pathoradi/ihc">
+              <div className={classes.flex}>
+                IHC
+                <div className={classes.narrow}>
+                  <HiArrowRight size={18} />
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+          </div>
           {/* <div><a href="./pathoradi/ihc"> IHC </a></div> */}
         </div>
 
